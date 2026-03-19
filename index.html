@@ -152,7 +152,7 @@ h1.hn em{font-style:italic;color:var(--gold);}
 .svc-toggle{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--border);background:var(--cream);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;font-size:16px;color:var(--ink-3);}
 .svc-card.open .svc-toggle{background:var(--ink);border-color:var(--ink);color:var(--gold);transform:rotate(45deg);}
 .svc-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);}
-.svc-card.open .svc-body{max-height:500px;}
+.svc-card.open .svc-body{max-height:700px;}
 .svc-inner{padding:0 22px 20px;}
 .svc-inner p{font-size:13px;color:var(--ink-3);line-height:1.75;margin-bottom:14px;border-top:1px solid var(--border-2);padding-top:14px;}
 .svc-list{list-style:none;}
@@ -464,7 +464,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="stag"><span class="fr-text">Offre de services</span><span class="en-text">Services</span></div>
     <h2 class="st"><span class="fr-text">Ce que je <em>propose</em></span><span class="en-text">What I <em>offer</em></span></h2>
     <div class="stbar"></div>
-    <p class="sd"><span class="fr-text">Cliquez sur une carte pour découvrir le détail — 6 domaines d'expertise à votre service</span><span class="en-text">Click a card to see details — 6 areas of expertise at your service</span></p>
+    <p class="sd"><span class="fr-text">Cliquez sur une carte pour découvrir le détail — 7 domaines d'expertise à votre service</span><span class="en-text">Click a card to see details — 7 areas of expertise at your service</span></p>
   </div>
   <div class="svc-grid">
 
@@ -494,24 +494,50 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">✈</span>
+          <span class="svc-emoji">✈️</span>
           <h3><span class="fr-text">Événementiel, Tourisme &amp; Voyages</span><span class="en-text">Events, Tourism &amp; Travel</span></h3>
-          <p class="svc-tagline"><span class="fr-text">Organisation complète — dont Omra</span><span class="en-text">Full organisation — incl. Umrah</span></p>
+          <p class="svc-tagline"><span class="fr-text">Voyages groupes, affaires &amp; événements</span><span class="en-text">Group trips, business &amp; events</span></p>
           <span class="svc-price"><span class="fr-text">À partir de 50 000 FCFA / projet</span><span class="en-text">From 50,000 FCFA / project</span></span>
         </div>
         <span class="svc-toggle">+</span>
       </div>
       <div class="svc-body"><div class="svc-inner">
-        <p><span class="fr-text">De la billetterie à la logistique complète — voyages groupes, voyages d'affaires et Omra. Prochains départs disponibles sur demande.</span><span class="en-text">From ticketing to full logistics — group trips, business travel and Umrah. Upcoming departures available on request.</span></p>
+        <p><span class="fr-text">De la billetterie à la logistique complète — voyages groupes, voyages d'affaires, événements corporate. Prochains départs disponibles sur demande.</span><span class="en-text">From ticketing to full logistics — group trips, business travel and corporate events. Upcoming departures available on request.</span></p>
         <ul class="svc-list">
           <li><span class="fr-text">Organisation voyages groupes &amp; individuels</span><span class="en-text">Group &amp; individual travel organisation</span></li>
-          <li><span class="fr-text">Voyages Omra — logistique complète</span><span class="en-text">Umrah trips — full logistics</span></li>
           <li><span class="fr-text">Billetterie aérienne &amp; ferroviaire</span><span class="en-text">Air &amp; rail ticketing</span></li>
           <li><span class="fr-text">Assurance voyage &amp; assistance visa</span><span class="en-text">Travel insurance &amp; visa assistance</span></li>
+          <li><span class="fr-text">Hébergement &amp; transferts — hôtels négociés</span><span class="en-text">Accommodation &amp; transfers — negotiated hotels</span></li>
           <li><span class="fr-text">Événements corporate &amp; team building</span><span class="en-text">Corporate events &amp; team building</span></li>
           <li><span class="fr-text">Séminaires, conférences &amp; MICE</span><span class="en-text">Seminars, conferences &amp; MICE</span></li>
         </ul>
         <a href="#contact" class="svc-cta"><span class="fr-text">Obtenir un programme →</span><span class="en-text">Get a programme →</span></a>
+      </div></div>
+    </div>
+
+    <div class="svc-card" onclick="toggleSvc(this)">
+      <div class="svc-head">
+        <div class="svc-head-left">
+          <span class="svc-emoji">🕌</span>
+          <h3><span class="fr-text">Omra — Voyage Spirituel</span><span class="en-text">Umrah — Spiritual Journey</span></h3>
+          <p class="svc-tagline"><span class="fr-text">Organisation de A à Z — groupes, femmes &amp; managers</span><span class="en-text">Full A-to-Z organisation — groups, women &amp; managers</span></p>
+          <span class="svc-price"><span class="fr-text">Tarif sur demande</span><span class="en-text">Price on request</span></span>
+        </div>
+        <span class="svc-toggle">+</span>
+      </div>
+      <div class="svc-body"><div class="svc-inner">
+        <p><span class="fr-text">Un voyage sacré mérite une organisation sans faille. Je prends en charge chaque détail — de la constitution du dossier au retour à Abidjan — pour que vous vous consacriez pleinement à votre démarche spirituelle.</span><span class="en-text">A sacred journey deserves flawless organisation. I handle every detail — from file preparation to your return to Abidjan — so you can focus entirely on your spiritual journey.</span></p>
+        <ul class="svc-list">
+          <li><span class="fr-text">Organisation de A à Z — visa, billet, hébergement à La Mecque &amp; Médine, transferts</span><span class="en-text">A-to-Z organisation — visa, flights, accommodation in Mecca &amp; Medina, transfers</span></li>
+          <li><span class="fr-text">🧕 Omra Femmes — accompagnement féminin sécurisé, mahram inclus si nécessaire, groupes non-mixtes disponibles</span><span class="en-text">🧕 Umrah for Women — secure female accompaniment, mahram included if needed, single-gender groups available</span></li>
+          <li><span class="fr-text">💼 Omra Managers — formule premium : vol business, hôtel 5★ haram view, circuit personnalisé, assistance VIP</span><span class="en-text">💼 Umrah for Managers — premium package: business class, 5★ haram-view hotel, tailored itinerary, VIP assistance</span></li>
+          <li><span class="fr-text">Omra en groupe — départs programmés depuis Abidjan, ambiance conviviale &amp; encadrée</span><span class="en-text">Group Umrah — scheduled departures from Abidjan, supervised &amp; welcoming atmosphere</span></li>
+          <li><span class="fr-text">Préparation spirituelle — guide de pèlerinage, briefing pré-départ, fiches rituels</span><span class="en-text">Spiritual preparation — pilgrimage guide, pre-departure briefing, ritual sheets</span></li>
+          <li><span class="fr-text">Assistance 24h/24 sur place &amp; numéro d'urgence dédié</span><span class="en-text">24/7 on-site assistance &amp; dedicated emergency number</span></li>
+          <li><span class="fr-text">Constitution complète du dossier visa Arabie Saoudite</span><span class="en-text">Full Saudi Arabia visa file preparation</span></li>
+          <li><span class="fr-text">Ziyaras &amp; visites des lieux saints — Masjid al-Haram, Masjid an-Nabawi &amp; plus</span><span class="en-text">Ziyaras &amp; visits to holy sites — Masjid al-Haram, Masjid an-Nabawi &amp; more</span></li>
+        </ul>
+        <a href="#contact" class="svc-cta"><span class="fr-text">Réserver mon Omra →</span><span class="en-text">Book my Umrah →</span></a>
       </div></div>
     </div>
 
