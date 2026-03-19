@@ -381,6 +381,46 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 
   .toast{bottom:16px;right:16px;left:16px;text-align:center;}
 }
+
+/* ---- SVG ICON HELPERS ---- */
+.hc-i svg,.ci svg,.ti svg,.qi svg,.sbi svg,.mob-menu a svg,.hbts svg{
+  display:inline-block;vertical-align:middle;flex-shrink:0;
+}
+.hc-i svg{width:14px;height:14px;color:var(--gold);}
+.ci svg{width:22px;height:22px;color:var(--gold);}
+.ti svg{width:14px;height:14px;color:var(--gold);}
+.qi svg{width:20px;height:20px;color:var(--gold);}
+.sbi svg{width:18px;height:18px;color:var(--gold);}
+.svc-emoji svg{display:block;width:26px;height:26px;color:var(--gold);}
+.fmi svg{display:block;width:26px;height:26px;color:var(--gold);margin-bottom:13px;}
+.tld svg{width:16px;height:16px;color:var(--gold);}
+.tld.mu svg{color:var(--ink-3);}
+.tlrea svg{width:14px;height:14px;vertical-align:middle;color:var(--gold);flex-shrink:0;}
+.mob-menu a svg{width:15px;height:15px;opacity:.75;}
+.hbts .bcv svg{width:14px;height:14px;}
+.hbts .bpri svg,.hbts .bsec svg{width:14px;height:14px;}
+.csuccess svg{width:16px;height:16px;vertical-align:middle;color:var(--gold-dark);}
+.refnote svg{width:18px;height:18px;color:var(--gold);}
+
+/* ---- SVG ICON HELPERS ---- */
+.hc-i svg,.ci svg,.ti svg,.qi svg,.sbi svg,.mob-menu a svg,.hbts svg{
+  display:inline-block;vertical-align:middle;flex-shrink:0;
+}
+.hc-i svg{width:14px;height:14px;color:var(--gold);}
+.ci svg{width:22px;height:22px;color:var(--gold);}
+.ti svg{width:14px;height:14px;color:var(--gold);}
+.qi svg{width:20px;height:20px;color:var(--gold);}
+.sbi svg{width:18px;height:18px;color:var(--gold);}
+.svc-emoji svg{display:block;width:26px;height:26px;color:var(--gold);}
+.fmi svg{display:block;width:26px;height:26px;color:var(--gold);margin-bottom:13px;}
+.tld svg{width:16px;height:16px;color:var(--gold);}
+.tld.mu svg{color:var(--ink-3);}
+.tlrea svg{width:14px;height:14px;vertical-align:middle;color:var(--gold);flex-shrink:0;}
+.mob-menu a svg{width:15px;height:15px;opacity:.75;}
+.hbts .bcv svg{width:14px;height:14px;}
+.hbts .bpri svg,.hbts .bsec svg{width:14px;height:14px;}
+.csuccess svg{width:16px;height:16px;vertical-align:middle;color:var(--gold-dark);}
+.refnote svg{width:18px;height:18px;color:var(--gold);}
 </style>
 </head>
 <body>
@@ -405,8 +445,8 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
   <div class="nav-right">
     <div class="lang-sw">
-      <button class="lang-btn active" data-lang="fr" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇬🇧 EN</button>
+      <button class="lang-btn active" data-lang="fr" onclick="setLang('fr')">FR</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
     </div>
     <button class="nav-burger" id="navBurger" onclick="toggleMobMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -416,18 +456,18 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 
 <!-- MENU MOBILE -->
 <div class="mob-menu" id="mobMenu">
-  <a href="#profil" onclick="closeMobMenu()">👤 <span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
-  <a href="#competences" onclick="closeMobMenu()">⚙️ <span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
-  <a href="#services" onclick="closeMobMenu()">💼 Services</a>
-  <a href="#projets" onclick="closeMobMenu()">🎭 <span class="fr-text">Événements</span><span class="en-text">Events</span></a>
-  <a href="#parcours" onclick="closeMobMenu()">📋 <span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
-  <a href="#formations" onclick="closeMobMenu()">🎓 <span class="fr-text">Formations</span><span class="en-text">Education</span></a>
+  <a href="#profil" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="5" r="3"/><path d="M2 14.5c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg> <span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
+  <a href="#competences" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.54 11.54l1.41 1.41M3.05 12.95l1.42-1.41M11.54 4.46l1.41-1.41"/></svg> <span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
+  <a href="#services" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="5.5" width="12" height="8.5" rx="1.5"/><path d="M5.5 5.5v-2A1.5 1.5 0 017 2h2a1.5 1.5 0 011.5 1.5v2"/><line x1="2" y1="9.5" x2="14" y2="9.5"/></svg> Services</a>
+  <a href="#projets" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="3.5" width="12" height="10.5" rx="1.5"/><line x1="2" y1="7.5" x2="14" y2="7.5"/><line x1="5.5" y1="1.5" x2="5.5" y2="4.5"/><line x1="10.5" y1="1.5" x2="10.5" y2="4.5"/></svg> <span class="fr-text">Événements</span><span class="en-text">Events</span></a>
+  <a href="#parcours" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg> <span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
+  <a href="#formations" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg> <span class="fr-text">Formations</span><span class="en-text">Education</span></a>
   <div class="mob-divider"></div>
-  <a href="#contact" class="mob-cta" onclick="closeMobMenu()">✉ Contact</a>
+  <a href="#contact" class="mob-cta" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="3.5" width="13" height="9" rx="1.5"/><polyline points="1.5,3.5 8,9 14.5,3.5"/></svg> Contact</a>
   <div class="mob-divider"></div>
   <div class="mob-lang-row">
-    <button class="lang-btn active" data-lang="fr" onclick="setLang('fr');closeMobMenu()">🇫🇷 FR</button>
-    <button class="lang-btn" data-lang="en" onclick="setLang('en');closeMobMenu()">🇬🇧 EN</button>
+    <button class="lang-btn active" data-lang="fr" onclick="setLang('fr');closeMobMenu()">FR</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en');closeMobMenu()">EN</button>
   </div>
 </div>
 
@@ -455,8 +495,8 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <div class="hs"><div class="hs-n">15+</div><div class="hs-l"><span class="fr-text">Collaborateurs</span><span class="en-text">Team members</span></div></div>
     </div>
     <div class="hcc au au4">
-      <a href="/cdn-cgi/l/email-protection#96fdf7f4f7fbf7e4fff7fbb8e6e4f9a4d6f1fbf7fffab8f5f9fb" class="hc"><span class="hc-i">✉</span><span class="__cf_email__" data-cfemail="4c272d2e2d212d3e252d21623c3e237e0c2b212d2520622f2321">[email&#160;protected]</span></a>
-      <a href="tel:+2250584230724" class="hc"><span class="hc-i">📞</span>(+225) 05 84 23 07 24</a>
+      <a href="/cdn-cgi/l/email-protection#96fdf7f4f7fbf7e4fff7fbb8e6e4f9a4d6f1fbf7fffab8f5f9fb" class="hc"><span class="hc-i"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="3.5" width="13" height="9" rx="1.5"/><polyline points="1.5,3.5 8,9 14.5,3.5"/></svg></span><span class="__cf_email__" data-cfemail="4c272d2e2d212d3e252d21623c3e237e0c2b212d2520622f2321">[email&#160;protected]</span></a>
+      <a href="tel:+2250584230724" class="hc"><span class="hc-i"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3.5 2h3L8 5.5 6.5 7A8 8 0 009 9.5l1.5-1.5L14 9.5v3c0 .5-1.5 2-4 1C5.5 13 3 10.5 2 6.5c-.8-2.5.8-4 1.5-4.5z"/></svg></span>(+225) 05 84 23 07 24</a>
     </div>
     <div class="hbts au au4">
       <a href="#contact" class="bpri">
@@ -464,7 +504,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
         <span class="en-text">Contact me →</span>
       </a>
       <a id="cvDownloadBtn" href="assets/CV_MariamKABA.pdf" download="CV_MariamKABA.pdf" class="bcv">
-        ⬇ <span class="fr-text">Télécharger mon CV</span><span class="en-text">Download CV</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><line x1="8" y1="2" x2="8" y2="11"/><polyline points="4,7 8,11 12,7"/><line x1="2" y1="14" x2="14" y2="14"/></svg> <span class="fr-text">Télécharger mon CV</span><span class="en-text">Download CV</span>
       </a>
       <a href="#parcours" class="bsec">
         <span class="fr-text">Mon parcours</span><span class="en-text">My experience</span>
@@ -497,7 +537,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
 
   <div class="sb">
-    <div class="sbh"><div class="sbi">⚙</div><h3><span class="fr-text">Compétences Techniques</span><span class="en-text">Technical Skills</span></h3><div class="sbl"></div></div>
+    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.54 11.54l1.41 1.41M3.05 12.95l1.42-1.41M11.54 4.46l1.41-1.41"/></svg></div><h3><span class="fr-text">Compétences Techniques</span><span class="en-text">Technical Skills</span></h3><div class="sbl"></div></div>
     <div class="sg">
       <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Support administratif &amp; opérationnel</span><span class="en-text">Administrative &amp; operational support</span></p></div>
       <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Coordination interservices &amp; suivi d'activités</span><span class="en-text">Cross-department coordination</span></p></div>
@@ -512,17 +552,17 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
 
   <div class="sb">
-    <div class="sbh"><div class="sbi">🛠</div><h3><span class="fr-text">Outils &amp; Langues</span><span class="en-text">Tools &amp; Languages</span></h3><div class="sbl"></div></div>
+    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12.5 1.5a2.5 2.5 0 00-2 4L3 13a1.5 1.5 0 002 2l7.5-8a2.5 2.5 0 000-5.5z"/><line x1="4.5" y1="11.5" x2="6" y2="13"/></svg></div><h3><span class="fr-text">Outils &amp; Langues</span><span class="en-text">Tools &amp; Languages</span></h3><div class="sbl"></div></div>
     <div class="tlg">
       <div>
         <p style="font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;"><span class="fr-text">OUTILS &amp; LOGICIELS</span><span class="en-text">TOOLS &amp; SOFTWARE</span></p>
-        <div class="trow"><span class="ti">💻</span>Suite Microsoft Office &amp; Google Workspace</div>
-        <div class="trow"><span class="ti">🎨</span>Canva</div>
-        <div class="trow"><span class="ti">📋</span>Asana / Trello</div>
-        <div class="trow"><span class="ti">🤝</span>Zoom / Microsoft Teams</div>
-        <div class="trow"><span class="ti">📊</span>SIRH &amp; ERP (Odoo)</div>
-        <div class="trow"><span class="ti">✈</span><span class="fr-text">Systèmes de réservation &amp; billetterie</span><span class="en-text">Booking &amp; ticketing systems</span></div>
-        <div class="trow"><span class="ti">🤖</span><span class="fr-text">Utilisation de l'IA pour optimiser les tâches</span><span class="en-text">AI tools for task optimization</span></div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><line x1="5" y1="14" x2="11" y2="14"/><line x1="8" y1="11.5" x2="8" y2="14"/></svg></span>Suite Microsoft Office &amp; Google Workspace</div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M11.5 2l2.5 2.5-8 8H3.5v-2.5l8-8z"/><line x1="9.5" y1="3.5" x2="12.5" y2="6.5"/></svg></span>Canva</div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg></span>Asana / Trello</div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="4.5" width="8" height="7" rx="1.5"/><path d="M9.5 7.5l5-3v7l-5-3"/></svg></span>Zoom / Microsoft Teams</div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><line x1="2" y1="14" x2="14" y2="14"/><rect x="3" y="8.5" width="3" height="5.5"/><rect x="6.5" y="5.5" width="3" height="8.5"/><rect x="10" y="2.5" width="3" height="11.5"/></svg></span>SIRH &amp; ERP (Odoo)</div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M14 3.5l-5 5 4 4.5H9.5L8 10 4 13.5v-1.5l4-3-4-3.5V4l5.5 2L14 3.5z"/></svg></span><span class="fr-text">Systèmes de réservation &amp; billetterie</span><span class="en-text">Booking &amp; ticketing systems</span></div>
+        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="4" width="8" height="8" rx="1"/><line x1="6" y1="1.5" x2="6" y2="4"/><line x1="10" y1="1.5" x2="10" y2="4"/><line x1="6" y1="12" x2="6" y2="14.5"/><line x1="10" y1="12" x2="10" y2="14.5"/><line x1="1.5" y1="6" x2="4" y2="6"/><line x1="1.5" y1="10" x2="4" y2="10"/><line x1="12" y1="6" x2="14.5" y2="6"/><line x1="12" y1="10" x2="14.5" y2="10"/></svg></span><span class="fr-text">Utilisation de l'IA pour optimiser les tâches</span><span class="en-text">AI tools for task optimization</span></div>
       </div>
       <div>
         <p style="font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;"><span class="fr-text">LANGUES</span><span class="en-text">LANGUAGES</span></p>
@@ -541,18 +581,18 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
 
   <div class="sb">
-    <div class="sbh"><div class="sbi">✦</div><h3><span class="fr-text">Qualités Professionnelles</span><span class="en-text">Professional Qualities</span></h3><div class="sbl"></div></div>
+    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><polygon points="8,1.5 10.5,6 15,7 11.5,10.5 12.5,15 8,12.5 3.5,15 4.5,10.5 1,7 5.5,6"/></svg></div><h3><span class="fr-text">Qualités Professionnelles</span><span class="en-text">Professional Qualities</span></h3><div class="sbl"></div></div>
     <div class="qg">
-      <div class="qc"><div class="qi">🎯</div><p><span class="fr-text">Rigueur &amp; fiabilité</span><span class="en-text">Accuracy &amp; reliability</span></p></div>
-      <div class="qc"><div class="qi">📋</div><p><span class="fr-text">Organisation &amp; priorités</span><span class="en-text">Organisation &amp; priorities</span></p></div>
-      <div class="qc"><div class="qi">🔒</div><p><span class="fr-text">Discrétion &amp; confidentialité</span><span class="en-text">Discretion &amp; confidentiality</span></p></div>
-      <div class="qc"><div class="qi">💬</div><p><span class="fr-text">Communication structurée</span><span class="en-text">Structured communication</span></p></div>
-      <div class="qc"><div class="qi">⚡</div><p><span class="fr-text">Réactivité &amp; imprévus</span><span class="en-text">Reactivity &amp; problem-solving</span></p></div>
-      <div class="qc"><div class="qi">🌍</div><p><span class="fr-text">Adaptabilité interculturelle</span><span class="en-text">Intercultural adaptability</span></p></div>
-      <div class="qc"><div class="qi">🤝</div><p><span class="fr-text">Travail en équipe</span><span class="en-text">Teamwork</span></p></div>
-      <div class="qc"><div class="qi">🧠</div><p><span class="fr-text">Autonomie &amp; proactivité</span><span class="en-text">Autonomy &amp; proactivity</span></p></div>
-      <div class="qc"><div class="qi">👂</div><p><span class="fr-text">Écoute &amp; sens du service</span><span class="en-text">Listening &amp; service mindset</span></p></div>
-      <div class="qc"><div class="qi">🚀</div><p><span class="fr-text">Orientée résultats</span><span class="en-text">Results-oriented</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3.5"/><circle cx="8" cy="8" r="1" fill="currentColor" stroke="none"/></svg></div><p><span class="fr-text">Rigueur &amp; fiabilité</span><span class="en-text">Accuracy &amp; reliability</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg></div><p><span class="fr-text">Organisation &amp; priorités</span><span class="en-text">Organisation &amp; priorities</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4.5" y="7" width="7" height="7" rx="1"/><path d="M6 7v-2a2 2 0 014 0v2"/></svg></div><p><span class="fr-text">Discrétion &amp; confidentialité</span><span class="en-text">Discretion &amp; confidentiality</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M2 2.5h12a1 1 0 011 1v7.5a1 1 0 01-1 1H5l-3 2v-11a1 1 0 011-1z"/></svg></div><p><span class="fr-text">Communication structurée</span><span class="en-text">Structured communication</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><polyline points="10,2 6,9 9,9 6,14 12,7 8.5,7"/></svg></div><p><span class="fr-text">Réactivité &amp; imprévus</span><span class="en-text">Reactivity &amp; problem-solving</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></div><p><span class="fr-text">Adaptabilité interculturelle</span><span class="en-text">Intercultural adaptability</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="6" cy="5" r="2.5"/><path d="M1.5 14c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5"/><circle cx="12" cy="4" r="2"/><path d="M10.5 10.5a3.5 3.5 0 014 3.5"/></svg></div><p><span class="fr-text">Travail en équipe</span><span class="en-text">Teamwork</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="6" r="3.5"/><path d="M2 15c0-3.3 2.7-6 6-6s6 2.7 6 6"/><line x1="8" y1="9" x2="8" y2="12"/></svg></div><p><span class="fr-text">Autonomie &amp; proactivité</span><span class="en-text">Autonomy &amp; proactivity</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M6 4a4 4 0 014 4c0 2-1 3-2 4s-1 2 0 3"/><path d="M8 15a3 3 0 01-3-3c0-1.5 1-2.5 2-3"/></svg></div><p><span class="fr-text">Écoute &amp; sens du service</span><span class="en-text">Listening &amp; service mindset</span></p></div>
+      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 13.5V10M5 13c0 2 1.5 3 3 3s3-1 3-3"/><path d="M10.5 4.5c0-1.3-1-2.5-2.5-2.5S5.5 3.2 5.5 4.5C5 6.5 4 8.5 3 10h10c-1-1.5-2-3.5-2.5-5.5z"/></svg></div><p><span class="fr-text">Orientée résultats</span><span class="en-text">Results-oriented</span></p></div>
     </div>
   </div>
 </section>
@@ -571,7 +611,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">🖥</span>
+          <span class="svc-emoji"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
           <h3><span class="fr-text">Bras droit virtuel</span><span class="en-text">Virtual Right Hand</span></h3>
           <p class="svc-tagline"><span class="fr-text">Bureau Externalisé 360°</span><span class="en-text">Outsourced Office 360°</span></p>
           <span class="svc-price"><span class="fr-text">À partir de 25 000 FCFA / mois</span><span class="en-text">From 25,000 FCFA / month</span></span>
@@ -601,7 +641,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">🎯</span>
+          <span class="svc-emoji"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg></span>
           <h3><span class="fr-text">Cap Carrière</span><span class="en-text">Cap Carrière</span></h3>
           <p class="svc-tagline"><span class="fr-text">Accompagnement &amp; renforcement professionnel</span><span class="en-text">Professional support &amp; development</span></p>
           <span class="svc-price"><span class="fr-text">À partir de 10 000 FCFA/projet</span><span class="en-text">From 10,000 FCFA/project</span></span>
@@ -617,7 +657,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
           <li><span class="fr-text">Stratégie de développement de carrière</span><span class="en-text">Career development strategy</span></li>
           <li><span class="fr-text">Ateliers pratiques : vente &amp; relation client, accueil &amp; protocole, communication professionnelle, gestion administrative</span><span class="en-text">Practical workshops: sales &amp; customer relations, reception &amp; protocol, professional communication, administrative management</span></li>
         </ul>
-        <p style="font-size:12px;font-style:italic;color:var(--gold-dark);border-top:1px solid var(--border-2);padding-top:12px;margin-bottom:0;"><span class="fr-text">✨ Un accompagnement pro, pensé pour votre réalité et votre budget.</span><span class="en-text">✨ Professional support, designed for your reality and your budget.</span></p>
+        <p style="font-size:12px;font-style:italic;color:var(--gold-dark);border-top:1px solid var(--border-2);padding-top:12px;margin-bottom:0;"><span class="fr-text">Un accompagnement pro, pensé pour votre réalité et votre budget.</span><span class="en-text">Professional support, designed for your reality and your budget.</span></p>
         <a href="#contact" class="svc-cta"><span class="fr-text">Booster mon profil →</span><span class="en-text">Boost my profile →</span></a>
       </div></div>
     </div>
@@ -626,7 +666,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">✈️</span>
+          <span class="svc-emoji"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg></span>
           <h3><span class="fr-text">Voyages clés en main</span><span class="en-text">All-Inclusive Travel</span></h3>
           <p class="svc-tagline"><span class="fr-text">De la formalité au séjour de rêve, je m'occupe de tout.</span><span class="en-text">From formalities to dream stays, I handle everything.</span></p>
           <span class="svc-price"><span class="fr-text">Tarifs sur demande</span><span class="en-text">Prices on request</span></span>
@@ -647,7 +687,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
           <li><span class="fr-text">Weekends détente &amp; escapades</span><span class="en-text">Relaxing weekends &amp; getaways</span></li>
           <li><span class="fr-text">Voyages en famille</span><span class="en-text">Family trips</span></li>
         </ul>
-        <p style="font-size:12px;font-style:italic;color:var(--gold-dark);border-top:1px solid var(--border-2);padding-top:12px;margin-bottom:0;"><span class="fr-text">✈️ Partez sans stress. Revenez avec des souvenirs.</span><span class="en-text">✈️ Leave stress-free. Come back with memories.</span></p>
+        <p style="font-size:12px;font-style:italic;color:var(--gold-dark);border-top:1px solid var(--border-2);padding-top:12px;margin-bottom:0;"><span class="fr-text">Partez sans stress. Revenez avec des souvenirs.</span><span class="en-text">Leave stress-free. Come back with memories.</span></p>
         <a href="#contact" class="svc-cta"><span class="fr-text">Organiser mon voyage →</span><span class="en-text">Plan my trip →</span></a>
       </div></div>
     </div>
@@ -656,7 +696,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">🕌</span>
+          <span class="svc-emoji"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="14" width="18" height="8" rx="1"/><path d="M8 14v-3a4 4 0 018 0v3"/><path d="M12 11V7"/><path d="M9 7a3 3 0 006 0"/><line x1="8" y1="14" x2="8" y2="22"/><line x1="16" y1="14" x2="16" y2="22"/></svg></span>
           <h3><span class="fr-text">Omra — Voyage Spirituel</span><span class="en-text">Umrah — Spiritual Journey</span></h3>
           <p class="svc-tagline"><span class="fr-text">Organisation de A à Z — groupes, femmes &amp; managers</span><span class="en-text">Full A-to-Z organisation — groups, women &amp; managers</span></p>
           <span class="svc-price"><span class="fr-text">Tarif sur demande</span><span class="en-text">Price on request</span></span>
@@ -667,8 +707,8 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
         <p><span class="fr-text">Un voyage sacré mérite une organisation sans faille. Je prends en charge chaque détail — de la constitution du dossier au retour à Abidjan — pour que vous vous consacriez pleinement à votre démarche spirituelle.</span><span class="en-text">A sacred journey deserves flawless organisation. I handle every detail — from file preparation to your return to Abidjan — so you can focus entirely on your spiritual journey.</span></p>
         <ul class="svc-list">
           <li><span class="fr-text">Organisation de A à Z — visa, billet, hébergement à La Mecque &amp; Médine, transferts</span><span class="en-text">A-to-Z organisation — visa, flights, accommodation in Mecca &amp; Medina, transfers</span></li>
-          <li><span class="fr-text">🧕 Omra Femmes — accompagnement féminin sécurisé, mahram inclus si nécessaire, groupes non-mixtes disponibles</span><span class="en-text">🧕 Umrah for Women — secure female accompaniment, mahram included if needed, single-gender groups available</span></li>
-          <li><span class="fr-text">💼 Omra Managers — formule premium : vol business, hôtel 5★ haram view, circuit personnalisé, assistance VIP</span><span class="en-text">💼 Umrah for Managers — premium package: business class, 5★ haram-view hotel, tailored itinerary, VIP assistance</span></li>
+          <li><span class="fr-text">Omra Femmes — accompagnement féminin sécurisé, mahram inclus si nécessaire, groupes non-mixtes disponibles</span><span class="en-text">Umrah for Women — secure female accompaniment, mahram included if needed, single-gender groups available</span></li>
+          <li><span class="fr-text">Omra Managers — formule premium : vol business, hôtel 5★ haram view, circuit personnalisé, assistance VIP</span><span class="en-text">Umrah for Managers — premium package: business class, 5★ haram-view hotel, tailored itinerary, VIP assistance</span></li>
           <li><span class="fr-text">Omra en groupe — départs programmés depuis Abidjan, ambiance conviviale &amp; encadrée</span><span class="en-text">Group Umrah — scheduled departures from Abidjan, supervised &amp; welcoming atmosphere</span></li>
           <li><span class="fr-text">Préparation spirituelle — guide de pèlerinage, briefing pré-départ, fiches rituels</span><span class="en-text">Spiritual preparation — pilgrimage guide, pre-departure briefing, ritual sheets</span></li>
           <li><span class="fr-text">Assistance 24h/24 sur place &amp; numéro d'urgence dédié</span><span class="en-text">24/7 on-site assistance &amp; dedicated emergency number</span></li>
@@ -683,7 +723,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-head-left">
-          <span class="svc-emoji">🤝</span>
+          <span class="svc-emoji"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M2 21c0-4 3.134-7 7-7s7 3 7 7"/><circle cx="19" cy="6" r="3"/><path d="M16 21a4 4 0 015-3.87"/></svg></span>
           <h3><span class="fr-text">Mise en Relation B2B</span><span class="en-text">B2B Matchmaking</span></h3>
           <p class="svc-tagline"><span class="fr-text">Réseau tourisme, voyage &amp; événementiel</span><span class="en-text">Tourism, travel &amp; events network</span></p>
           <span class="svc-price"><span class="fr-text">À partir de 30 000 FCFA</span><span class="en-text">From 30,000 FCFA</span></span>
@@ -719,14 +759,14 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="evc">
       <div class="evh"><span class="evt"><span class="fr-text">Festival Culturel</span><span class="en-text">Cultural Festival</span></span></div>
       <h3>Akan Festival &amp; Akan Brunch</h3>
-      <div class="evrl">🎭 <span class="fr-text">Coordinatrice Logistique &amp; Administrative</span><span class="en-text">Logistics &amp; Administrative Coordinator</span></div>
+      <div class="evrl"><span class="fr-text">Coordinatrice Logistique &amp; Administrative</span><span class="en-text">Logistics &amp; Administrative Coordinator</span></div>
       <p><span class="fr-text">Coordination logistique d'un festival culturel célébrant les peuples Akan. Accueil et orientation sur des flux de +600 participants. Gestion des accréditations, planification des espaces et coordination des prestataires.</span><span class="en-text">Logistics coordination of a cultural festival celebrating the Akan peoples. Reception and orientation for 600+ attendees. Accreditation management, space planning and supplier coordination.</span></p>
       <div class="evtags"><span class="evtag">+600 participants</span><span class="evtag">Logistique</span><span class="evtag">Front office</span><span class="evtag">Prestataires</span></div>
     </div>
     <div class="evc">
       <div class="evh"><span class="evt"><span class="fr-text">Networking Mensuel</span><span class="en-text">Monthly Networking</span></span></div>
       <h3>Les Jeudis Abidjanais</h3>
-      <div class="evrl">🗓 <span class="fr-text">Organisatrice &amp; Responsable Accueil</span><span class="en-text">Organiser &amp; Reception Manager</span></div>
+      <div class="evrl"><span class="fr-text">Organisatrice &amp; Responsable Accueil</span><span class="en-text">Organiser &amp; Reception Manager</span></div>
       <p><span class="fr-text">Planification et coordination d'événements mensuels de networking réunissant professionnels et entrepreneurs. Communication digitale sur Instagram, Facebook et WhatsApp Business.</span><span class="en-text">Planning and coordination of monthly networking events bringing together professionals and entrepreneurs. Digital communication on Instagram, Facebook and WhatsApp Business.</span></p>
       <div class="evtags"><span class="evtag">Networking</span><span class="evtag">Instagram / Facebook</span><span class="evtag"><span class="fr-text">Accueil</span><span class="en-text">Reception</span></span></div>
     </div>
@@ -734,7 +774,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="evc">
       <div class="evh"><span class="evt"><span class="fr-text">Team Building &amp; Voyages</span><span class="en-text">Team Building &amp; Travel</span></span></div>
       <h3><span class="fr-text">Team Building, Séminaires &amp; Voyages Omra</span><span class="en-text">Team Building, Seminars &amp; Umrah Trips</span></h3>
-      <div class="evrl">✈ <span class="fr-text">Chef de Projet &amp; Coordinatrice Voyages</span><span class="en-text">Project Lead &amp; Travel Coordinator</span></div>
+      <div class="evrl"><span class="fr-text">Chef de Projet &amp; Coordinatrice Voyages</span><span class="en-text">Project Lead &amp; Travel Coordinator</span></div>
       <p><span class="fr-text">Organisation complète de team building corporate, séminaires et voyages Omra groupes. Billetterie, hébergements, visas, programme de visite, restauration, transport et suivi post-voyage.</span><span class="en-text">Full organisation of corporate team building, seminars and group Umrah trips. Ticketing, accommodation, visas, itinerary, catering, transport and post-trip follow-up.</span></p>
       <div class="evtags"><span class="evtag">Team building</span><span class="evtag">Omra / Umrah</span><span class="evtag"><span class="fr-text">Billetterie</span><span class="en-text">Ticketing</span></span><span class="evtag">Visa</span></div>
     </div>
@@ -754,7 +794,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <div class="tld">◆</div>
       <div class="tlc">
         <div class="tlch">
-          <div><h3><span class="fr-text">Assistante Événementiel</span><span class="en-text">Events Assistant</span></h3><p class="tlco">DIM Voyages — Abidjan</p><p class="tlloc">📍 <span class="fr-text">Agence voyage d'affaires &amp; mobilité corporate</span><span class="en-text">Business travel &amp; corporate mobility agency</span></p></div>
+          <div><h3><span class="fr-text">Assistante Événementiel</span><span class="en-text">Events Assistant</span></h3><p class="tlco">DIM Voyages — Abidjan</p><p class="tlloc"><span class="fr-text">Agence voyage d'affaires &amp; mobilité corporate</span><span class="en-text">Business travel &amp; corporate mobility agency</span></p></div>
           <span class="tldate"><span class="fr-text">Oct. 2025 – Présent</span><span class="en-text">Oct. 2025 – Present</span></span>
         </div>
         <ul class="tltasks">
@@ -769,10 +809,10 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <div class="tld">◆</div>
       <div class="tlc">
         <div class="tlch">
-          <div><h3>Office Manager</h3><p class="tlco">Ivoir Trips International — Abidjan, Riviera Palmeraie</p><p class="tlloc">📍 <span class="fr-text">Agence leader tourisme d'affaires &amp; événementiel</span><span class="en-text">Leading business tourism &amp; events agency</span></p></div>
+          <div><h3>Office Manager</h3><p class="tlco">Ivoir Trips International — Abidjan, Riviera Palmeraie</p><p class="tlloc"><span class="fr-text">Agence leader tourisme d'affaires &amp; événementiel</span><span class="en-text">Leading business tourism &amp; events agency</span></p></div>
           <span class="tldate"><span class="fr-text">Fév. 2024 – Sept. 2025</span><span class="en-text">Feb. 2024 – Sept. 2025</span></span>
         </div>
-        <div class="tlrea">🏆 <span class="fr-text">Optimisation des processus de coordination interne — amélioration de la circulation de l'information et de l'efficacité globale entre direction, équipes et prestataires.</span><span class="en-text">Internal coordination process optimisation — improved information flow and overall efficiency between management, teams and suppliers.</span></div>
+        <div class="tlrea"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 2h6v5.5A3 3 0 015 7.5V2z"/><path d="M5 4.5H3a1.5 1.5 0 000 3H5"/><path d="M11 4.5h2a1.5 1.5 0 010 3H11"/><line x1="8" y1="10.5" x2="8" y2="12.5"/><line x1="5.5" y1="13.5" x2="10.5" y2="13.5"/></svg> <span class="fr-text">Optimisation des processus de coordination interne — amélioration de la circulation de l'information et de l'efficacité globale entre direction, équipes et prestataires.</span><span class="en-text">Internal coordination process optimisation — improved information flow and overall efficiency between management, teams and suppliers.</span></div>
         <ul class="tltasks">
           <li><span class="fr-text">Piloter l'organisation de +30 projets (synchronisation prestataires, direction, clients)</span><span class="en-text">Led 30+ project organisations (synchronising suppliers, management, clients)</span></li>
           <li><span class="fr-text">Superviser l'approvisionnement, la maintenance et la négociation des contrats fournisseurs</span><span class="en-text">Supervised procurement, maintenance and supplier contract negotiation</span></li>
@@ -787,10 +827,10 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <div class="tld">◆</div>
       <div class="tlc">
         <div class="tlch">
-          <div><h3><span class="fr-text">Assistante Marketing &amp; Communication</span><span class="en-text">Marketing &amp; Communication Assistant</span></h3><p class="tlco">Ivoir Trips International — Abidjan, Riviera Palmeraie</p><p class="tlloc">📍 <span class="fr-text">Promotion de la destination Côte d'Ivoire</span><span class="en-text">Promoting Côte d'Ivoire as a destination</span></p></div>
+          <div><h3><span class="fr-text">Assistante Marketing &amp; Communication</span><span class="en-text">Marketing &amp; Communication Assistant</span></h3><p class="tlco">Ivoir Trips International — Abidjan, Riviera Palmeraie</p><p class="tlloc"><span class="fr-text">Promotion de la destination Côte d'Ivoire</span><span class="en-text">Promoting Côte d'Ivoire as a destination</span></p></div>
           <span class="tldate"><span class="fr-text">Nov. 2022 – Déc. 2023</span><span class="en-text">Nov. 2022 – Dec. 2023</span></span>
         </div>
-        <div class="tlrea">🏆 <span class="fr-text">Meilleure coordination des partenaires et expérience participant plus fluide lors d'événements de grande envergure (+600 participants).</span><span class="en-text">Improved partner coordination and smoother participant experience at large-scale events (600+ attendees).</span></div>
+        <div class="tlrea"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 2h6v5.5A3 3 0 015 7.5V2z"/><path d="M5 4.5H3a1.5 1.5 0 000 3H5"/><path d="M11 4.5h2a1.5 1.5 0 010 3H11"/><line x1="8" y1="10.5" x2="8" y2="12.5"/><line x1="5.5" y1="13.5" x2="10.5" y2="13.5"/></svg> <span class="fr-text">Meilleure coordination des partenaires et expérience participant plus fluide lors d'événements de grande envergure (+600 participants).</span><span class="en-text">Improved partner coordination and smoother participant experience at large-scale events (600+ attendees).</span></div>
         <ul class="tltasks">
           <li><span class="fr-text">Accueil &amp; orientation sur des flux de +600 participants (front office, protocole)</span><span class="en-text">Reception &amp; orientation for 600+ attendees (front office, protocol)</span></li>
           <li><span class="fr-text">Création de contenus digitaux (affiches, visuels, stories) pour les événements</span><span class="en-text">Digital content creation (posters, visuals, stories) for events</span></li>
@@ -814,7 +854,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       </div>
     </div>
     <div class="tli">
-      <div class="tld mu">♡</div>
+      <div class="tld mu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 13C8 13 1.5 9 1.5 5.5a3.5 3.5 0 017 0 3.5 3.5 0 017 0C15.5 9 8 13 8 13z"/></svg></div>
       <div class="tlc">
         <span class="benpill"><span class="fr-text">Bénévolat</span><span class="en-text">Volunteering</span></span>
         <div class="tlch">
@@ -840,7 +880,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
   <div class="fmg">
     <div class="fmc">
-      <div class="fmi">🎓</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg></div>
       <h3><span class="fr-text">Certificat Responsable RH</span><span class="en-text">HR Manager Certificate</span></h3>
       <p class="fmorg">Glory Management Consulting Group — CI</p>
       <div class="fmmod">
@@ -857,7 +897,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <span class="sbadge stenc"><span class="fr-text">En cours · Avr. 2026</span><span class="en-text">In progress · Apr. 2026</span></span>
     </div>
     <div class="fmc">
-      <div class="fmi">📚</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 2h7a1 1 0 011 1v10a1 1 0 01-1 1H3"/><path d="M3 2a2 2 0 000 4M3 6a2 2 0 000 8M3 14a1 1 0 010-12"/><line x1="10" y1="7" x2="13.5" y2="7"/></svg></div>
       <h3><span class="fr-text">Licence PRO — Marketing &amp; Publicité</span><span class="en-text">Professional Degree — Marketing &amp; Advertising</span></h3>
       <p class="fmorg">PIGIER CI — Abidjan</p>
       <div class="fmmod">
@@ -869,7 +909,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       </div>
     </div>
     <div class="fmc">
-      <div class="fmi">📊</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><line x1="2" y1="14" x2="14" y2="14"/><rect x="3" y="8.5" width="3" height="5.5"/><rect x="6.5" y="5.5" width="3" height="8.5"/><rect x="10" y="2.5" width="3" height="11.5"/></svg></div>
       <h3>BTS — <span class="fr-text">Gestion Commerciale</span><span class="en-text">Commercial Management</span></h3>
       <p class="fmorg">PIGIER CI — Abidjan</p>
       <div class="fmmod">
@@ -880,7 +920,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       </div>
     </div>
     <div class="fmc">
-      <div class="fmi">🏅</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="10" r="4.5"/><path d="M5.5 5.5L4 2h8l-1.5 3.5"/><line x1="6" y1="2" x2="8" y2="5.5"/><line x1="10" y1="2" x2="8" y2="5.5"/></svg></div>
       <h3><span class="fr-text">Certification Microsoft Excel</span><span class="en-text">Microsoft Excel Certification</span></h3>
       <p class="fmorg">Microsoft — Office 2016</p>
       <div class="fmmod">
@@ -892,7 +932,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <span class="sbadge stcer"><span class="fr-text">Certifiée</span><span class="en-text">Certified</span></span>
     </div>
     <div class="fmc">
-      <div class="fmi">🌍</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></div>
       <h3>CLOM — <span class="fr-text">Tourisme Durable &amp; Patrimoine Culturel</span><span class="en-text">Sustainable Tourism &amp; Cultural Heritage</span></h3>
       <p class="fmorg"><span class="fr-text">Organisation Internationale de la Francophonie (OIF)</span><span class="en-text">International Organisation of La Francophonie (OIF)</span></p>
       <div class="fmmod">
@@ -904,7 +944,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       <span class="sbadge stcom"><span class="fr-text">Complété</span><span class="en-text">Completed</span></span>
     </div>
     <div class="fmc" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--gold-pale);border-style:dashed;">
-      <div class="fmi">📖</div>
+      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 3.5C6.5 2.5 4 2 2 2v11c2 0 4.5.5 6 1.5V3.5z"/><path d="M8 3.5C9.5 2.5 12 2 14 2v11c-2 0-4.5.5-6 1.5V3.5z"/></svg></div>
       <h3 style="margin-bottom:8px;"><span class="fr-text">En développement continu</span><span class="en-text">Continuously learning</span></h3>
       <p style="font-size:12px;color:var(--ink-3);line-height:1.6;"><span class="fr-text">Veille active sur les tendances RH, événementiel, tourisme halal et office management en Afrique de l'Ouest.</span><span class="en-text">Active monitoring of HR, events, halal tourism and office management trends in West Africa.</span></p>
     </div>
@@ -943,28 +983,28 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
           </select>
           <textarea class="fi" name="message" placeholder="Votre message / Your message *" required></textarea>
         </div>
-        <button type="submit" class="cbtn" id="submitBtn"><span class="fr-text">Envoyer le message ✉</span><span class="en-text">Send message ✉</span></button>
+        <button type="submit" class="cbtn" id="submitBtn"><span class="fr-text">Envoyer le message</span><span class="en-text">Send message</span></button>
       </form>
-      <div class="csuccess" id="successMsg">✅ <span class="fr-text">Message envoyé ! Je vous réponds sous 24h.</span><span class="en-text">Message sent! I'll reply within 24h.</span></div>
+      <div class="csuccess" id="successMsg"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6.5"/><polyline points="5,8 7,10.5 11,6"/></svg> <span class="fr-text">Message envoyé ! Je vous réponds sous 24h.</span><span class="en-text">Message sent! I'll reply within 24h.</span></div>
     </div>
     <div class="cside">
       <a href="/cdn-cgi/l/email-protection#e883898a8985899a818985c6989a87daa88f85898184c68b8785" class="ccard clink">
-        <div class="ccl">Email</div><div class="ci">✉</div>
+        <div class="ccl">Email</div><div class="ci"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="3.5" width="13" height="9" rx="1.5"/><polyline points="1.5,3.5 8,9 14.5,3.5"/></svg></div>
         <h4><span class="__cf_email__" data-cfemail="d0bbb1b2b1bdb1a2b9b1bdfea0a2bfe290b7bdb1b9bcfeb3bfbd">[email&#160;protected]</span></h4>
         <p><span class="fr-text">Réponse garantie sous 24h</span><span class="en-text">Reply guaranteed within 24h</span></p>
       </a>
       <a href="tel:+2250584230724" class="ccard clink">
-        <div class="ccl"><span class="fr-text">Téléphone</span><span class="en-text">Phone</span></div><div class="ci">📞</div>
+        <div class="ccl"><span class="fr-text">Téléphone</span><span class="en-text">Phone</span></div><div class="ci"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3.5 2h3L8 5.5 6.5 7A8 8 0 009 9.5l1.5-1.5L14 9.5v3c0 .5-1.5 2-4 1C5.5 13 3 10.5 2 6.5c-.8-2.5.8-4 1.5-4.5z"/></svg></div>
         <h4>(+225) 05 84 23 07 24</h4>
         <p><span class="fr-text">Lun–Sam · 8h–19h</span><span class="en-text">Mon–Sat · 8am–7pm</span></p>
       </a>
       <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20j%27ai%20vu%20votre%20portfolio%20et%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener" class="ccard clink wa">
-        <div class="ccl">WhatsApp</div><div class="ci">💬</div>
+        <div class="ccl">WhatsApp</div><div class="ci"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M2 2.5h12a1 1 0 011 1v7.5a1 1 0 01-1 1H5l-3 2v-11a1 1 0 011-1z"/></svg></div>
         <h4 class="green">(+225) 05 84 23 07 24</h4>
         <p><span class="fr-text">Réponse instantanée</span><span class="en-text">Instant reply</span></p>
       </a>
       <div class="ccard">
-        <div class="ccl"><span class="fr-text">Localisation</span><span class="en-text">Location</span></div><div class="ci">📍</div>
+        <div class="ccl"><span class="fr-text">Localisation</span><span class="en-text">Location</span></div><div class="ci"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 14.5S2.5 9.5 2.5 6a5.5 5.5 0 0111 0c0 3.5-5.5 8.5-5.5 8.5z"/><circle cx="8" cy="6" r="2"/></svg></div>
         <h4>Abidjan, Cocody Angré 🇨🇮</h4>
         <p><span class="fr-text">Abidjan &amp; Full Remote</span><span class="en-text">Abidjan &amp; Full Remote</span></p>
       </div>
@@ -1097,7 +1137,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 
       </div>
     </div>
-    <div class="refnote"><span style="font-size:18px">🌐</span><span><span class="fr-text">Coordonnées complètes disponibles sur demande.</span><span class="en-text">Full contact details available on request.</span></span></div>
+    <div class="refnote"><span style="line-height:1"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span><span><span class="fr-text">Coordonnées complètes disponibles sur demande.</span><span class="en-text">Full contact details available on request.</span></span></div>
   </div>
 </section>
 
@@ -1107,10 +1147,10 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div><strong>Mariam KABA</strong><span>Office Manager · Event · Travel · Formation</span></div>
   </a>
   <p>© 2025–2026 Mariam KABA · <span class="fr-text">Tous droits réservés</span><span class="en-text">All rights reserved</span></p>
-  <p class="fcredit">✦ <span class="fr-text">Portfolio conçu avec précision</span><span class="en-text">Portfolio crafted with precision</span></p>
+  <p class="fcredit"><span class="fr-text">Portfolio conçu avec précision</span><span class="en-text">Portfolio crafted with precision</span></p>
 </footer>
 
-<div class="toast" id="toast">✅ <span class="fr-text">Message envoyé !</span><span class="en-text">Message sent!</span></div>
+<div class="toast" id="toast"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6.5"/><polyline points="5,8 7,10.5 11,6"/></svg> <span class="fr-text">Message envoyé !</span><span class="en-text">Message sent!</span></div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ================================================
 // MARIAM KABA PORTFOLIO — JavaScript complet
