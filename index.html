@@ -786,9 +786,10 @@ select.fi option{background:var(--forest);color:var(--white);}
 <nav id="mainNav">
   <a href="#profil" class="nb">
     <div class="nm">MK</div>
-    <div class="nt"><strong>Mariam KABA</strong><span>Office Manager 360°</span></div>
+    <div class="nt"><strong>Mariam KABA</strong><span>Office Manager 360° · Event · Travel</span></div>
   </a>
   <div class="nl">
+    <a href="#profil"><span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
     <a href="#competences"><span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
     <a href="#services">Services</a>
     <a href="#agenda">Agenda</a>
@@ -807,16 +808,20 @@ select.fi option{background:var(--forest);color:var(--white);}
   </div>
 </nav>
 
+<!-- MENU MOBILE -->
 <div class="mob-menu" id="mobMenu">
-  <a href="#competences" onclick="closeMobMenu()"><span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
-  <a href="#services" onclick="closeMobMenu()">Services</a>
-  <a href="#agenda" onclick="closeMobMenu()">Agenda</a>
-  <a href="#parcours" onclick="closeMobMenu()"><span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
-  <a href="#formations" onclick="closeMobMenu()"><span class="fr-text">Formations</span><span class="en-text">Education</span></a>
-  <a href="#contact" onclick="closeMobMenu()"><span class="fr-text">Contact</span><span class="en-text">Contact</span></a>
-  <div style="display:flex;gap:8px;margin-top:12px;">
-    <button class="lang-btn active" data-lang="fr" onclick="setLang('fr');closeMobMenu()" style="background:var(--forest);color:var(--gold);border-radius:50px;font-size:12px;font-weight:700;padding:8px 16px;border:none;cursor:pointer;">FR</button>
-    <button class="lang-btn" data-lang="en" onclick="setLang('en');closeMobMenu()" style="background:var(--sand-2);border-radius:50px;font-size:12px;font-weight:700;padding:8px 16px;border:1px solid var(--border);cursor:pointer;">EN</button>
+  <a href="#profil" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="5" r="3"/><path d="M2 14.5c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg> <span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
+  <a href="#competences" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.54 11.54l1.41 1.41M3.05 12.95l1.42-1.41M11.54 4.46l1.41-1.41"/></svg> <span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
+  <a href="#services" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="5.5" width="12" height="8.5" rx="1.5"/><path d="M5.5 5.5v-2A1.5 1.5 0 017 2h2a1.5 1.5 0 011.5 1.5v2"/><line x1="2" y1="9.5" x2="14" y2="9.5"/></svg> Services</a>
+  <a href="#agenda" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="3.5" width="12" height="10.5" rx="1.5"/><line x1="2" y1="7.5" x2="14" y2="7.5"/><line x1="5.5" y1="1.5" x2="5.5" y2="4.5"/><line x1="10.5" y1="1.5" x2="10.5" y2="4.5"/></svg> <span class="fr-text">Agenda</span><span class="en-text">Agenda</span></a>
+  <a href="#parcours" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg> <span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
+  <a href="#formations" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg> <span class="fr-text">Formations</span><span class="en-text">Education</span></a>
+  <div class="mob-divider"></div>
+  <a href="#contact" class="mob-cta" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="3.5" width="13" height="9" rx="1.5"/><polyline points="1.5,3.5 8,9 14.5,3.5"/></svg> Contact</a>
+  <div class="mob-divider"></div>
+  <div class="mob-lang-row">
+    <button class="lang-btn active" data-lang="fr" onclick="setLang('fr');closeMobMenu()">FR</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en');closeMobMenu()">EN</button>
   </div>
 </div>
 
@@ -829,17 +834,14 @@ select.fi option{background:var(--forest);color:var(--white);}
       <div class="hero-dot"></div>
       <span><span class="fr-text">Disponible · Abidjan &amp; Full Remote</span><span class="en-text">Available · Abidjan &amp; Full Remote</span></span>
     </div>
-    <h1 class="hero-name au au1">
-      Mariam
-      <em>KABA.</em>
-    </h1>
+    <h1 class="hn au au1">Mariam <em>KABA</em></h1>
     <p class="hero-title au au2">
       <span class="fr-text">Office Manager 360° · Architecte d'expériences &amp; voyages<br>Organisatrice Omra · Support RH opérationnel</span>
       <span class="en-text">Office Manager 360° · Architect of experiences &amp; travel<br>Umrah Organiser · Operational HR support</span>
     </p>
     <p class="hero-pitch au au3">
-      <span class="fr-text">La main qui pense <em>autant qu'elle exécute</em>.<br>Votre organisation mérite quelqu'un qui anticipe.</span>
-      <span class="en-text">The hand that thinks <em>as much as it executes</em>.<br>Your organisation deserves someone who anticipates.</span>
+      <span class="fr-text">La main qui pense <em>autant qu'elle exécute</em>.<br>je transforme vos défis en expériences fluides.<br>Abidjan &amp; Remote · Français : natif · Anglais : B2</span>
+      <span class="en-text">The hand that thinks <em>as much as it executes</em>.<br>I turn your challenges into seamless experiences.<br>Abidjan &amp; Remote · French: native · English: B2</span>
     </p>
     <div class="hstats au au3">
       <div class="hs"><div class="hs-n">4+</div><div class="hs-l"><span class="fr-text">Ans d'exp.</span><span class="en-text">Years exp.</span></div></div>
@@ -873,66 +875,11 @@ select.fi option{background:var(--forest);color:var(--white);}
         <div class="hbd"></div>
         <div class="hbt">
           <strong><span class="fr-text">Ouverte aux opportunités</span><span class="en-text">Open to opportunities</span></strong>
-          <span><span class="fr-text">Abidjan · Afrique · International</span><span class="en-text">Abidjan · Africa · International</span></span>
+          <span><span class="fr-text">Abidjan · International</span><span class="en-text">Abidjan · International</span></span>
         </div>
       </div>
     </div>
-    <div class="hero-deco">Office Manager</div>
-  </div>
-</section>
-
-<!-- =============================================
-     COMPÉTENCES
-     ============================================= -->
-<section id="competences" class="sec sec-sand geo-pattern">
-  <div class="sh">
-    <div class="stag"><span class="fr-text">Trois piliers d'expertise</span><span class="en-text">Three pillars of expertise</span></div>
-    <h2 class="st"><span class="fr-text">Ce que je <em>maîtrise</em></span><span class="en-text">What I <em>master</em></span></h2>
-    <div class="stbar"></div>
-    <p class="sd"><span class="fr-text">Une expertise transversale, au service de vos besoins les plus précis</span><span class="en-text">Cross-disciplinary expertise, serving your most specific needs</span></p>
-  </div>
-  <div class="piliers">
-    <div class="pilier">
-      <div class="pilier-num">01</div>
-      <div class="pilier-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
-      </div>
-      <div class="pilier-title"><span class="fr-text">Office Management &amp; Administration</span><span class="en-text">Office Management &amp; Administration</span></div>
-      <p class="pilier-desc"><span class="fr-text">Organisation totale du bureau, des processus et des équipes. Bras droit opérationnel de la direction.</span><span class="en-text">Full office, process and team organisation. Operational right hand of management.</span></p>
-      <div class="pilier-tags">
-        <span class="ptag"><span class="fr-text">Agenda &amp; planning</span><span class="en-text">Calendar &amp; planning</span></span>
-        <span class="ptag"><span class="fr-text">Gestion fournisseurs</span><span class="en-text">Supplier management</span></span>
-        <span class="ptag">KPI &amp; reporting</span>
-        <span class="ptag"><span class="fr-text">Admin RH &amp; paie</span><span class="en-text">HR &amp; payroll admin</span></span>
-      </div>
-    </div>
-    <div class="pilier">
-      <div class="pilier-num">02</div>
-      <div class="pilier-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-      </div>
-      <div class="pilier-title"><span class="fr-text">Tourisme, Événementiel &amp; Voyages</span><span class="en-text">Tourism, Events &amp; Travel</span></div>
-      <p class="pilier-desc"><span class="fr-text">De la billetterie aux team building, conception et pilotage d'expériences mémorables pour groupes et individuels.</span><span class="en-text">From ticketing to team building, designing and managing memorable experiences for groups and individuals.</span></p>
-      <div class="pilier-tags">
-        <span class="ptag"><span class="fr-text">Billetterie &amp; visas</span><span class="en-text">Ticketing &amp; visas</span></span>
-        <span class="ptag"><span class="fr-text">Séminaires</span><span class="en-text">Seminars</span></span>
-        <span class="ptag"><span class="fr-text">Circuits sur-mesure</span><span class="en-text">Tailor-made circuits</span></span>
-        <span class="ptag"><span class="fr-text">Groupes &amp; individuels</span><span class="en-text">Groups &amp; individuals</span></span>
-      </div>
-    </div>
-    <div class="pilier">
-      <div class="pilier-num">03</div>
-      <div class="pilier-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-      </div>
-      <div class="pilier-title"><span class="fr-text">Omra &amp; Voyages Sacrés</span><span class="en-text">Umrah &amp; Sacred Journeys</span></div>
-      <p class="pilier-desc"><span class="fr-text">Organisation de A à Z des pèlerinages — visa, vols, hébergement 5★, accompagnement spirituel. Départ Abidjan.</span><span class="en-text">Full A-to-Z pilgrimage organisation — visa, flights, 5★ accommodation, spiritual guidance. Departure Abidjan.</span></p>
-      <div class="pilier-tags">
-        <span class="ptag"><span class="fr-text">Omra groupe &amp; individuelle</span><span class="en-text">Group &amp; solo Umrah</span></span>
-        <span class="ptag"><span class="fr-text">Omra Femmes</span><span class="en-text">Women Umrah</span></span>
-        <span class="ptag"><span class="fr-text">Départ Abidjan</span><span class="en-text">Departure Abidjan</span></span>
-      </div>
-    </div>
+    <div class="hero-deco">Office Manager 360°</div>
   </div>
 </section>
 
@@ -941,30 +888,31 @@ select.fi option{background:var(--forest);color:var(--white);}
      ============================================= -->
 <section id="services" class="sec sec-forest terra-pattern">
   <div class="sh" style="margin-bottom:48px;">
-    <div class="stag stag-light"><span class="fr-text">Prestations disponibles</span><span class="en-text">Available services</span></div>
-    <h2 class="st st-light"><span class="fr-text">Mes <em style="color:var(--gold);">services</em></span><span class="en-text">My <em style="color:var(--gold);">services</em></span></h2>
+    <div class="stag stag-light"><span class="fr-text">Piliers d'expertise</span><span class="en-text">Pillars of expertise</span></div>
+    <h2 class="st st-light"><span class="fr-text">Nos offres <em style="color:var(--gold);">phares</em></span><span class="en-text">Our core <em style="color:var(--gold);">offerings</em></span></h2>
     <div class="stbar stbar-gold"></div>
-    <p class="sd sd-light"><span class="fr-text">Cliquez sur un service pour voir le détail de la prestation</span><span class="en-text">Click a service to see full details</span></p>
+    <p class="sd sd-light"><span class="fr-text">Cliquez sur un service pour voir le détail de la prestation</span><span class="en-text">Click on a service to see full details</span></p>
   </div>
   <div class="svc-grid">
     <div class="svc-card" onclick="toggleSvc(this)">
       <div class="svc-head">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/></svg></div>
         <div>
-          <div class="svc-title"><span class="fr-text">Office Management &amp; Assistanat</span><span class="en-text">Office Management &amp; Assistance</span></div>
-          <div class="svc-tagline"><span class="fr-text">Gestion administrative, RH, reporting, coordination</span><span class="en-text">Admin management, HR, reporting, coordination</span></div>
+          <div class="svc-title"><span class="fr-text">Bras droit virtuel</span><span class="en-text">Virtual right-hand partner</span></div>
+          <div class="svc-tagline"><span class="fr-text">Gestion administrative et opérationnelle</span><span class="en-text">Administrative and operational management</span></div>
         </div>
         <div class="svc-arr">+</div>
       </div>
-      <div class="svc-body">
-        <ul>
+      <div class="svc-body"><div class="svc-inner">
+        <p><span class="fr-text">Déléguez votre administratif à une experte - gestion de vos tâches quotidiennes à distance, avec rigueur et confidentialité.</span><span class="en-text">Delegate your admin to an expert - daily task management remotely, with rigor and confidentiality.</span></p>
+        <ul class="svc-list">
           <li><span class="fr-text">Gestion d'agenda &amp; planning direction</span><span class="en-text">Calendar &amp; management scheduling</span></li>
           <li><span class="fr-text">Rédaction &amp; mise en forme de documents</span><span class="en-text">Document drafting &amp; formatting</span></li>
           <li><span class="fr-text">Suivi de dossiers, relances &amp; reporting</span><span class="en-text">File tracking, follow-ups &amp; reporting</span></li>
           <li><span class="fr-text">Organisation de réunions &amp; comptes-rendus</span><span class="en-text">Meeting organisation &amp; minutes</span></li>
-          <li><span class="fr-text">Suivi RH, paie &amp; contrats</span><span class="en-text">HR, payroll &amp; contract management</span></li>
+          <li><span class="fr-text">Gestion et administration des ressources humaines</span><span class="en-text">Human resources management and administration</span></li>
           <li><span class="fr-text">Gestion fournisseurs &amp; négociation</span><span class="en-text">Supplier management &amp; negotiation</span></li>
-          <li><span class="fr-text">Tableaux de bord KPI &amp; reporting</span><span class="en-text">KPI dashboards &amp; reporting</span></li>
+          <li><span class="fr-text">Gestion front office</span><span class="en-text">Front-office management</span></li>
           <li><span class="fr-text">Optimisation des processus internes</span><span class="en-text">Internal process optimisation</span></li>
         </ul>
         <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services%20d'Office%20Management" target="_blank" rel="noopener" class="svc-wa">
@@ -976,22 +924,23 @@ select.fi option{background:var(--forest);color:var(--white);}
       <div class="svc-head">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
         <div>
-          <div class="svc-title"><span class="fr-text">Coaching Carrière &amp; CV</span><span class="en-text">Career Coaching &amp; CV</span></div>
-          <div class="svc-tagline"><span class="fr-text">CV ATS, lettre de motivation, personal branding</span><span class="en-text">ATS CV, cover letter, personal branding</span></div>
+          <div class="svc-title"><span class="fr-text">Propulseur de carrière</span><span class="en-text">Career booster</span></div>
+          <div class="svc-tagline"><span class="fr-text">Développement de carrière &amp; personal branding</span><span class="en-text">Career boost strategy & Personal branding</span></div>
         </div>
         <div class="svc-arr">+</div>
       </div>
-      <div class="svc-body">
-        <ul>
+      <div class="svc-body"><div class="svc-inner">
+        <p><span class="fr-text">Que vous cherchiez un emploi, visiez une évolution ou souhaitiez renforcer une compétence clé - je vous accompagne avec des outils concrets et une connaissance terrain du marché ivoirien et africain.</span><span class="en-text">Whether you're looking for a job, aiming for growth or want to sharpen a key skill - I support you with practical tools and hands-on knowledge of the Ivorian and African market.</span></p>
+        <ul class="svc-list">
           <li><span class="fr-text">Refonte &amp; optimisation CV (compatible ATS)</span><span class="en-text">CV rewrite &amp; optimisation (ATS-compatible)</span></li>
           <li><span class="fr-text">Rédaction de lettre de motivation ciblée</span><span class="en-text">Targeted cover letter writing</span></li>
           <li><span class="fr-text">Coaching entretien &amp; personal branding LinkedIn</span><span class="en-text">Interview coaching &amp; LinkedIn personal branding</span></li>
           <li><span class="fr-text">Stratégie de développement de carrière</span><span class="en-text">Career development strategy</span></li>
           <li><span class="fr-text">Ateliers pratiques vente &amp; relation client</span><span class="en-text">Practical sales &amp; customer relations workshops</span></li>
-          <li><span class="fr-text">Accueil, protocole &amp; communication pro</span><span class="en-text">Reception, protocol &amp; professional communication</span></li>
+          <li><span class="fr-text">Ateliers pratiques : vente &amp; relation client, accueil &amp; protocole, communication professionnelle, gestion administrative</span><span class="en-text">Practical workshops: sales &amp; customer relations, reception &amp; protocol, professional communication, administrative management</span></li>
         </ul>
         <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services%20de%20coaching" target="_blank" rel="noopener" class="svc-wa">
-          <span class="fr-text">Premier échange gratuit →</span><span class="en-text">Free first consultation →</span>
+          <span class="fr-text">Appel découverte gratuit →</span><span class="en-text">Free first consultation →</span>
         </a>
       </div>
     </div>
@@ -999,8 +948,8 @@ select.fi option{background:var(--forest);color:var(--white);}
       <div class="svc-head">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M5 22v-3a7 7 0 0114 0v3"/></svg></div>
         <div>
-          <div class="svc-title"><span class="fr-text">Événementiel &amp; Team Building</span><span class="en-text">Events &amp; Team Building</span></div>
-          <div class="svc-tagline"><span class="fr-text">Conception, logistique, coordination totale</span><span class="en-text">Design, logistics, full coordination</span></div>
+          <div class="svc-title"><span class="fr-text">Événements &amp; voyages clés en main</span><span class="en-text">End-to-end events &amp; Travel coordination</span></div>
+          <div class="svc-tagline"><span class="fr-text">De la conception à la réalisation : une logistique sans faille pour vos projets.</span><span class="en-text">Design, logistics, full coordination</span></div>
         </div>
         <div class="svc-arr">+</div>
       </div>
