@@ -212,6 +212,113 @@ h1.hn em{font-style:italic;color:var(--gold);}
 .stenc::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
 .stobt,.stcer,.stcom{background:var(--ink);color:var(--gold);}
 
+/* ---- PILIERS COMPÉTENCES ---- */
+.piliers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:40px;}
+.pilier-card{background:var(--white);border:1.5px solid var(--border-2);border-radius:var(--radius);padding:30px 28px;transition:all .22s;position:relative;overflow:hidden;}
+.pilier-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(var(--gold),var(--gold-dark));opacity:0;transition:opacity .2s;}
+.pilier-card:hover{border-color:var(--gold);box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.pilier-card:hover::before{opacity:1;}
+.pilier-icon{font-size:32px;margin-bottom:14px;line-height:1;}
+.pilier-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--ink);margin-bottom:12px;line-height:1.2;}
+.pilier-desc{font-size:13.5px;color:var(--ink-3);line-height:1.8;margin-bottom:18px;}
+.pilier-tags{display:flex;flex-wrap:wrap;gap:7px;}
+.pilier-tags span{font-size:11px;color:var(--gold-dark);background:var(--gold-pale);border:1px solid var(--border);padding:4px 10px;border-radius:50px;font-weight:600;}
+/* Strip langues / outils */
+.comp-strip{display:flex;align-items:center;gap:0;background:var(--white);border:1px solid var(--border-2);border-radius:var(--radius);overflow:hidden;}
+.comp-strip-item{flex:1;padding:16px 22px;display:flex;flex-direction:column;gap:4px;}
+.comp-strip-label{font-size:9.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);}
+.comp-strip-val{font-size:12.5px;color:var(--ink-2);font-weight:500;}
+.comp-strip-sep{width:1px;height:48px;background:var(--border-2);flex-shrink:0;}
+/* ---- FAQ CONTACT ---- */
+.faq-block{margin-top:40px;border-top:1px solid var(--border-2);padding-top:32px;}
+.faq-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:18px;}
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.faq-item{background:var(--cream);border:1px solid var(--border-2);border-radius:var(--radius-sm);padding:16px 18px;transition:border-color .2s;}
+.faq-item:hover{border-color:var(--gold);}
+.faq-q{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;display:flex;align-items:center;gap:7px;}
+.faq-q::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.faq-a{font-size:12px;color:var(--ink-3);line-height:1.6;}
+/* ---- WHATSAPP FAB ---- */
+.wa-fab{position:fixed;bottom:28px;right:28px;z-index:500;display:none;align-items:center;gap:10px;background:#25d366;color:#fff;padding:13px 20px 13px 16px;border-radius:50px;font-size:13.5px;font-weight:700;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.40);transition:all .25s;}
+.wa-fab:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 10px 32px rgba(37,211,102,.50);}
+.wa-fab svg{width:20px;height:20px;flex-shrink:0;}
+@media(max-width:980px){.wa-fab{display:flex;}.piliers-grid{grid-template-columns:1fr;}.comp-strip{flex-direction:column;}.comp-strip-sep{width:100%;height:1px;}.faq-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.pilier-card{padding:22px 18px;}.pilier-title{font-size:17px;}.pilier-desc{font-size:13px;}.faq-grid{grid-template-columns:1fr;}.wa-fab{bottom:20px;right:16px;padding:12px 16px 12px 14px;font-size:12.5px;}}
+
+/* ---- AGENDA / ÉVÉNEMENTS À VENIR ---- */
+.ag-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.ag-card{background:var(--white);border:1.5px solid var(--border-2);border-radius:var(--radius);padding:0;overflow:hidden;transition:all .22s;position:relative;display:flex;flex-direction:column;}
+.ag-card:hover{border-color:var(--gold);box-shadow:var(--shadow-md);transform:translateY(-4px);}
+.ag-banner{padding:20px 24px 16px;background:var(--ink);position:relative;}
+.ag-banner-omra{background:linear-gradient(135deg,#1a1a1a 0%,#2d2217 100%);}
+.ag-banner-wellness{background:linear-gradient(135deg,#1a3a2a 0%,#0f2419 100%);}
+.ag-banner-reset{background:linear-gradient(135deg,#1a1e3a 0%,#0f1429 100%);}
+.ag-type{display:inline-flex;align-items:center;gap:6px;font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.ag-type-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;flex-shrink:0;}
+.ag-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:#fff;line-height:1.15;margin-bottom:4px;}
+.ag-dates{font-size:12px;color:rgba(255,255,255,.55);font-weight:500;}
+.ag-body{padding:20px 24px 0;flex:1;}
+.ag-orga{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--gold-dark);background:var(--gold-pale);border:1px solid var(--border);border-radius:50px;padding:4px 12px;margin-bottom:14px;}
+.ag-desc{font-size:13px;color:var(--ink-3);line-height:1.75;margin-bottom:14px;}
+.ag-includes{list-style:none;margin-bottom:16px;}
+.ag-includes li{font-size:12px;color:var(--ink-2);font-weight:500;padding:4px 0;border-bottom:1px dotted var(--border-2);display:flex;align-items:flex-start;gap:8px;line-height:1.45;}
+.ag-includes li:last-child{border-bottom:none;}
+.ag-includes li::before{content:"✦";color:var(--gold);font-size:9px;flex-shrink:0;margin-top:3px;}
+.ag-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px;}
+.ag-tag{font-size:10.5px;color:var(--ink-3);background:var(--cream);border:1px solid var(--border-2);padding:3px 9px;border-radius:50px;}
+.ag-footer{border-top:1px solid var(--border-2);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.ag-price{display:flex;flex-direction:column;}
+.ag-price-label{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-3);}
+.ag-price-amount{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--ink);line-height:1;}
+.ag-price-note{font-size:10px;color:var(--ink-4);}
+.ag-cta{background:var(--ink);color:var(--gold);padding:10px 18px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;letter-spacing:.6px;text-decoration:none;border:1.5px solid var(--ink);transition:all .25s;white-space:nowrap;}
+.ag-cta:hover{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+/* Sub-section "Projets Professionnels" dans Parcours */
+.proj-sub{margin-top:0;}
+.proj-sub-h{display:flex;align-items:center;gap:14px;margin-bottom:28px;}
+.proj-sub-h h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--ink);white-space:nowrap;}
+.proj-sub-line{flex:1;height:1px;background:var(--border);}
+/* ---- ONGLETS ---- */
+.tab-bar{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:36px;}
+.tab-btn{font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;letter-spacing:.4px;color:var(--ink-3);background:none;border:none;cursor:pointer;padding:10px 22px;position:relative;transition:color .2s;}
+.tab-btn::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--gold);transition:width .25s;}
+.tab-btn.active{color:var(--ink);}
+.tab-btn.active::after{width:100%;}
+.tab-panel{display:none;animation:fadeIn .25s ease;}
+.tab-panel.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+/* ---- MODAL TARIFS ---- */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9000;display:none;align-items:center;justify-content:center;padding:20px;}
+.modal-ov.open{display:flex;}
+.modal-box{background:var(--white);border-radius:var(--radius);max-width:660px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.25);}
+.modal-head{padding:28px 30px 18px;border-bottom:1px solid var(--border-2);display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
+.modal-head h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--ink);}
+.modal-head small{display:block;font-size:12px;color:var(--ink-3);margin-top:3px;}
+.modal-close{background:none;border:1px solid var(--border);border-radius:50px;width:32px;height:32px;cursor:pointer;font-size:16px;color:var(--ink-3);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.modal-close:hover{border-color:var(--gold);color:var(--ink);}
+.modal-body{padding:24px 30px 30px;}
+.modal-note{font-size:12.5px;color:var(--ink-3);background:var(--gold-pale);border-radius:8px;padding:10px 14px;margin-bottom:22px;}
+.price-table{width:100%;border-collapse:collapse;margin-bottom:22px;}
+.price-table th{font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-dark);padding:8px 12px;text-align:left;border-bottom:2px solid var(--border);}
+.price-table td{padding:14px 12px;border-bottom:1px solid var(--border-2);font-size:13.5px;color:var(--ink-2);vertical-align:middle;}
+.price-table tr:last-child td{border-bottom:none;}
+.price-table .ptag{font-weight:700;color:var(--ink);font-size:14px;}
+.price-table .pprice{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:var(--ink);white-space:nowrap;}
+.price-table .pprice small{font-family:'Outfit',sans-serif;font-size:11px;font-weight:500;color:var(--ink-3);margin-left:3px;}
+.price-table .pbadge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:50px;background:var(--gold-pale);color:var(--gold-dark);}
+.price-table .pbest{background:var(--ink);color:var(--gold);}
+.modal-wa{display:block;text-align:center;background:var(--ink);color:var(--gold);font-weight:700;font-size:13px;padding:14px;border-radius:var(--radius-sm);text-decoration:none;margin-top:4px;letter-spacing:.3px;transition:opacity .2s;}
+.modal-wa:hover{opacity:.85;}
+.modal-incl{margin-top:18px;}
+.modal-incl h4{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px;}
+.modal-incl ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.modal-incl li{font-size:12px;color:var(--ink-2);padding-left:14px;position:relative;}
+.modal-incl li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;}
+.ag-card .ag-detail-btn{display:block;text-align:center;font-size:11.5px;font-weight:600;color:var(--ink-3);background:var(--cream);border:1px solid var(--border-2);border-radius:var(--radius-sm);padding:8px;margin:-4px 18px 14px;cursor:pointer;transition:all .2s;letter-spacing:.3px;}
+.ag-card .ag-detail-btn:hover{border-color:var(--gold);color:var(--ink);}
+@media(max-width:600px){.modal-incl ul{grid-template-columns:1fr;}.modal-box{padding:0;}.tab-btn{padding:10px 14px;font-size:12px;}}
+/* fin onglets/modales */
+
 /* ---- CONTACT ---- */
 .contact-wrap{display:grid;grid-template-columns:2fr 1.1fr;gap:32px;max-width:960px;margin:0 auto;}
 .cform{background:var(--white);border:1px solid var(--border-2);border-radius:var(--radius);padding:32px;}
@@ -306,6 +413,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   .sg{grid-template-columns:1fr 1fr;}
   .svc-grid{grid-template-columns:1fr 1fr;}
   .evg{grid-template-columns:1fr;}
+  .ag-grid{grid-template-columns:1fr 1fr;}
   .tlg{grid-template-columns:1fr;}
   .fmg{grid-template-columns:1fr 1fr;}
   .qg{grid-template-columns:repeat(3,1fr);}
@@ -363,6 +471,12 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   .tlch h3{font-size:14px;}
 
   .evg{grid-template-columns:1fr;}
+  .ag-grid{grid-template-columns:1fr;}
+  .ag-footer{flex-direction:column;align-items:flex-start;gap:14px;}
+  .ag-cta{width:100%;text-align:center;justify-content:center;}
+  .ag-banner{padding:16px 18px 12px;}
+  .ag-title{font-size:17px;}
+  .ag-body{padding:16px 18px 0;}
   .evc{padding:18px;}
   .evc h3{font-size:16px;}
 
@@ -438,7 +552,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <a href="#profil"><span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
     <a href="#competences"><span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
     <a href="#services">Services</a>
-    <a href="#projets"><span class="fr-text">Événements</span><span class="en-text">Events</span></a>
+    <a href="#agenda"><span class="fr-text">Agenda</span><span class="en-text">Agenda</span></a>
     <a href="#parcours"><span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
     <a href="#formations"><span class="fr-text">Formations</span><span class="en-text">Education</span></a>
     <a href="#contact" class="ncta">Contact</a>
@@ -459,7 +573,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   <a href="#profil" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="5" r="3"/><path d="M2 14.5c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg> <span class="fr-text">Profil</span><span class="en-text">Profile</span></a>
   <a href="#competences" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.54 11.54l1.41 1.41M3.05 12.95l1.42-1.41M11.54 4.46l1.41-1.41"/></svg> <span class="fr-text">Compétences</span><span class="en-text">Skills</span></a>
   <a href="#services" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="5.5" width="12" height="8.5" rx="1.5"/><path d="M5.5 5.5v-2A1.5 1.5 0 017 2h2a1.5 1.5 0 011.5 1.5v2"/><line x1="2" y1="9.5" x2="14" y2="9.5"/></svg> Services</a>
-  <a href="#projets" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="3.5" width="12" height="10.5" rx="1.5"/><line x1="2" y1="7.5" x2="14" y2="7.5"/><line x1="5.5" y1="1.5" x2="5.5" y2="4.5"/><line x1="10.5" y1="1.5" x2="10.5" y2="4.5"/></svg> <span class="fr-text">Événements</span><span class="en-text">Events</span></a>
+  <a href="#agenda" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="2" y="3.5" width="12" height="10.5" rx="1.5"/><line x1="2" y1="7.5" x2="14" y2="7.5"/><line x1="5.5" y1="1.5" x2="5.5" y2="4.5"/><line x1="10.5" y1="1.5" x2="10.5" y2="4.5"/></svg> <span class="fr-text">Agenda</span><span class="en-text">Agenda</span></a>
   <a href="#parcours" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg> <span class="fr-text">Parcours</span><span class="en-text">Experience</span></a>
   <a href="#formations" onclick="closeMobMenu()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg> <span class="fr-text">Formations</span><span class="en-text">Education</span></a>
   <div class="mob-divider"></div>
@@ -530,71 +644,47 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 <!-- COMPÉTENCES -->
 <section id="competences" class="sec sec-w">
   <div class="sh">
-    <div class="stag"><span class="fr-text">Expertise &amp; Savoir-faire</span><span class="en-text">Skills &amp; Expertise</span></div>
-    <h2 class="st"><span class="fr-text">Mes <em>compétences</em></span><span class="en-text">My <em>skills</em></span></h2>
+    <div class="stag"><span class="fr-text">4 piliers · Une seule experte</span><span class="en-text">4 pillars · One expert</span></div>
+    <h2 class="st"><span class="fr-text">Ce que je <em>maîtrise</em></span><span class="en-text">What I <em>master</em></span></h2>
     <div class="stbar"></div>
-    <p class="sd"><span class="fr-text">Polyvalente, rigoureuse, orientée résultats — une combinaison taillée pour les environnements exigeants</span><span class="en-text">Versatile, rigorous, results-driven — built for demanding environments</span></p>
+    <p class="sd"><span class="fr-text">Pas une liste de cases à cocher — une expertise construite sur le terrain, projet après projet</span><span class="en-text">Not a checklist — expertise built in the field, project after project</span></p>
   </div>
 
-  <div class="sb">
-    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.54 11.54l1.41 1.41M3.05 12.95l1.42-1.41M11.54 4.46l1.41-1.41"/></svg></div><h3><span class="fr-text">Compétences Techniques</span><span class="en-text">Technical Skills</span></h3><div class="sbl"></div></div>
-    <div class="sg">
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Support administratif &amp; opérationnel</span><span class="en-text">Administrative &amp; operational support</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Coordination interservices &amp; suivi d'activités</span><span class="en-text">Cross-department coordination</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Gestion services généraux &amp; moyens généraux</span><span class="en-text">General services &amp; facilities management</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Organisation logistique réunions &amp; événements</span><span class="en-text">Meeting &amp; event logistics</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Suivi fournisseurs, commandes &amp; facturation</span><span class="en-text">Vendor management &amp; invoicing</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Gestion documentaire, classement &amp; archivage</span><span class="en-text">Document management &amp; filing</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Administration RH, onboarding &amp; paie</span><span class="en-text">HR administration, onboarding &amp; payroll</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Billetterie, logistique voyage &amp; Omra</span><span class="en-text">Ticketing, travel logistics &amp; Umrah</span></p></div>
-      <div class="skc"><span class="slv">Expert</span><p><span class="fr-text">Communication interne &amp; reporting direction</span><span class="en-text">Internal communication &amp; management reporting</span></p></div>
-    </div>
-  </div>
+  <!-- 4 PILIERS -->
+  <div class="piliers-grid">
 
-  <div class="sb">
-    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12.5 1.5a2.5 2.5 0 00-2 4L3 13a1.5 1.5 0 002 2l7.5-8a2.5 2.5 0 000-5.5z"/><line x1="4.5" y1="11.5" x2="6" y2="13"/></svg></div><h3><span class="fr-text">Outils &amp; Langues</span><span class="en-text">Tools &amp; Languages</span></h3><div class="sbl"></div></div>
-    <div class="tlg">
-      <div>
-        <p style="font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;"><span class="fr-text">OUTILS &amp; LOGICIELS</span><span class="en-text">TOOLS &amp; SOFTWARE</span></p>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><line x1="5" y1="14" x2="11" y2="14"/><line x1="8" y1="11.5" x2="8" y2="14"/></svg></span>Suite Microsoft Office &amp; Google Workspace</div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M11.5 2l2.5 2.5-8 8H3.5v-2.5l8-8z"/><line x1="9.5" y1="3.5" x2="12.5" y2="6.5"/></svg></span>Canva</div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg></span>Asana / Trello</div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="1.5" y="4.5" width="8" height="7" rx="1.5"/><path d="M9.5 7.5l5-3v7l-5-3"/></svg></span>Zoom / Microsoft Teams</div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><line x1="2" y1="14" x2="14" y2="14"/><rect x="3" y="8.5" width="3" height="5.5"/><rect x="6.5" y="5.5" width="3" height="8.5"/><rect x="10" y="2.5" width="3" height="11.5"/></svg></span>SIRH &amp; ERP (Odoo)</div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M14 3.5l-5 5 4 4.5H9.5L8 10 4 13.5v-1.5l4-3-4-3.5V4l5.5 2L14 3.5z"/></svg></span><span class="fr-text">Systèmes de réservation &amp; billetterie</span><span class="en-text">Booking &amp; ticketing systems</span></div>
-        <div class="trow"><span class="ti"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="4" width="8" height="8" rx="1"/><line x1="6" y1="1.5" x2="6" y2="4"/><line x1="10" y1="1.5" x2="10" y2="4"/><line x1="6" y1="12" x2="6" y2="14.5"/><line x1="10" y1="12" x2="10" y2="14.5"/><line x1="1.5" y1="6" x2="4" y2="6"/><line x1="1.5" y1="10" x2="4" y2="10"/><line x1="12" y1="6" x2="14.5" y2="6"/><line x1="12" y1="10" x2="14.5" y2="10"/></svg></span><span class="fr-text">Utilisation de l'IA pour optimiser les tâches</span><span class="en-text">AI tools for task optimization</span></div>
+    <!-- 1. OFFICE MANAGEMENT -->
+    <div class="pilier-card">
+      <div class="pilier-icon">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
       </div>
-      <div>
-        <p style="font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;"><span class="fr-text">LANGUES</span><span class="en-text">LANGUAGES</span></p>
-        <div class="lc">
-          <div class="lch"><strong><span class="fr-text">Français</span><span class="en-text">French</span></strong><span class="lba"><span class="fr-text">★ Langue maternelle</span><span class="en-text">★ Native</span></span></div>
-          <div class="ltr"><div class="ltf" style="width:99%"></div></div>
-          <span class="lsub"><span class="fr-text">Maîtrise totale — oral &amp; écrit professionnel</span><span class="en-text">Full mastery — oral &amp; written</span></span>
-        </div>
-        <div class="lc">
-          <div class="lch"><strong><span class="fr-text">Anglais</span><span class="en-text">English</span></strong><span class="lba">B2 — EFSET</span></div>
-          <div class="ltr"><div class="ltf" style="width:65%"></div></div>
-          <span class="lsub"><span class="fr-text">Intermédiaire — emails, réunions, supports</span><span class="en-text">Intermediate — emails, meetings, presentations</span></span>
-        </div>
-      </div>
+      <h3 class="pilier-title"><span class="fr-text">Office Management &amp; Administration</span><span class="en-text">Office Management &amp; Administration</span></h3>
+      <p class="pilier-desc"><span class="fr-text">Le moteur silencieux de votre organisation. Je structure, coordonne et optimise tout ce qu'un bureau interne ferait — agenda, fournisseurs, reporting, RH — sans les contraintes d'un recrutement.</span><span class="en-text">The silent engine of your organisation. I structure, coordinate and optimise everything an in-house office would — calendar, vendors, reporting, HR — without the hiring constraints.</span></p>
+      <div class="pilier-tags"><span><span class="fr-text">Agenda &amp; planning</span><span class="en-text">Calendar &amp; planning</span></span><span><span class="fr-text">Gestion fournisseurs</span><span class="en-text">Vendor management</span></span><span>KPI &amp; reporting</span><span><span class="fr-text">Admin RH &amp; paie</span><span class="en-text">HR admin &amp; payroll</span></span></div>
     </div>
+
+    <!-- 2. TOURISME, ÉVÉNEMENTIEL & VOYAGES -->
+    <div class="pilier-card">
+      <div class="pilier-icon">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+      </div>
+      <h3 class="pilier-title"><span class="fr-text">Tourisme, Événementiel &amp; Voyages</span><span class="en-text">Tourism, Events &amp; Travel</span></h3>
+      <p class="pilier-desc"><span class="fr-text">Du team building corporate à l'escapade en famille, je transforme chaque projet en expérience fluide. Billetterie, logistique, hébergements, transferts, programme — chaque détail est anticipé pour que vous partiez l'esprit léger.</span><span class="en-text">From corporate team building to family getaways, I turn every project into a seamless experience. Ticketing, logistics, accommodation, transfers, itinerary — every detail anticipated so you travel stress-free.</span></p>
+      <div class="pilier-tags"><span><span class="fr-text">Billetterie &amp; visas</span><span class="en-text">Ticketing &amp; visas</span></span><span><span class="fr-text">Séminaires &amp; team building</span><span class="en-text">Seminars &amp; team building</span></span><span><span class="fr-text">Circuits sur-mesure</span><span class="en-text">Tailor-made trips</span></span><span><span class="fr-text">Groupes &amp; individuels</span><span class="en-text">Groups &amp; individuals</span></span></div>
+    </div>
+
+    <!-- 3. OMRA & VOYAGES SACRÉS -->
+    <div class="pilier-card">
+      <div class="pilier-icon">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6.5 4.5 6.5 7.5c0 4 5.5 10 5.5 10s5.5-6 5.5-10C17.5 4.5 15 2 12 2z"/><circle cx="12" cy="7.5" r="1.5"/><path d="M5 20h14"/><path d="M8 20v-3"/><path d="M16 20v-3"/></svg>
+      </div>
+      <h3 class="pilier-title"><span class="fr-text">Omra &amp; Voyages Sacrés</span><span class="en-text">Umrah &amp; Sacred Journeys</span></h3>
+      <p class="pilier-desc"><span class="fr-text">Un voyage spirituel mérite une organisation sans faille. Je prends en charge chaque détail — dossier visa, vols, hôtels à La Mecque &amp; Médine, transferts, préparation spirituelle — pour que vous vous consacriez pleinement à votre démarche intérieure.</span><span class="en-text">A spiritual journey deserves flawless organisation. I handle every detail — visa file, flights, hotels in Mecca &amp; Medina, transfers, spiritual preparation — so you focus entirely on your inner journey.</span></p>
+      <div class="pilier-tags"><span><span class="fr-text">Omra individuelle &amp; groupe</span><span class="en-text">Individual &amp; group Umrah</span></span><span><span class="fr-text">Omra Femmes</span><span class="en-text">Women's Umrah</span></span><span><span class="fr-text">Omra Managers premium</span><span class="en-text">Premium Managers</span></span><span><span class="fr-text">Départ Abidjan</span><span class="en-text">From Abidjan</span></span></div>
+    </div>
+
   </div>
 
-  <div class="sb">
-    <div class="sbh"><div class="sbi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><polygon points="8,1.5 10.5,6 15,7 11.5,10.5 12.5,15 8,12.5 3.5,15 4.5,10.5 1,7 5.5,6"/></svg></div><h3><span class="fr-text">Qualités Professionnelles</span><span class="en-text">Professional Qualities</span></h3><div class="sbl"></div></div>
-    <div class="qg">
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3.5"/><circle cx="8" cy="8" r="1" fill="currentColor" stroke="none"/></svg></div><p><span class="fr-text">Rigueur &amp; fiabilité</span><span class="en-text">Accuracy &amp; reliability</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3.5" y="2.5" width="9" height="11" rx="1"/><line x1="6" y1="6.5" x2="10.5" y2="6.5"/><line x1="6" y1="9" x2="10.5" y2="9"/><line x1="6" y1="11.5" x2="8.5" y2="11.5"/></svg></div><p><span class="fr-text">Organisation &amp; priorités</span><span class="en-text">Organisation &amp; priorities</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4.5" y="7" width="7" height="7" rx="1"/><path d="M6 7v-2a2 2 0 014 0v2"/></svg></div><p><span class="fr-text">Discrétion &amp; confidentialité</span><span class="en-text">Discretion &amp; confidentiality</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M2 2.5h12a1 1 0 011 1v7.5a1 1 0 01-1 1H5l-3 2v-11a1 1 0 011-1z"/></svg></div><p><span class="fr-text">Communication structurée</span><span class="en-text">Structured communication</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><polyline points="10,2 6,9 9,9 6,14 12,7 8.5,7"/></svg></div><p><span class="fr-text">Réactivité &amp; imprévus</span><span class="en-text">Reactivity &amp; problem-solving</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></div><p><span class="fr-text">Adaptabilité interculturelle</span><span class="en-text">Intercultural adaptability</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="6" cy="5" r="2.5"/><path d="M1.5 14c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5"/><circle cx="12" cy="4" r="2"/><path d="M10.5 10.5a3.5 3.5 0 014 3.5"/></svg></div><p><span class="fr-text">Travail en équipe</span><span class="en-text">Teamwork</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="6" r="3.5"/><path d="M2 15c0-3.3 2.7-6 6-6s6 2.7 6 6"/><line x1="8" y1="9" x2="8" y2="12"/></svg></div><p><span class="fr-text">Autonomie &amp; proactivité</span><span class="en-text">Autonomy &amp; proactivity</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M6 4a4 4 0 014 4c0 2-1 3-2 4s-1 2 0 3"/><path d="M8 15a3 3 0 01-3-3c0-1.5 1-2.5 2-3"/></svg></div><p><span class="fr-text">Écoute &amp; sens du service</span><span class="en-text">Listening &amp; service mindset</span></p></div>
-      <div class="qc"><div class="qi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 13.5V10M5 13c0 2 1.5 3 3 3s3-1 3-3"/><path d="M10.5 4.5c0-1.3-1-2.5-2.5-2.5S5.5 3.2 5.5 4.5C5 6.5 4 8.5 3 10h10c-1-1.5-2-3.5-2.5-5.5z"/></svg></div><p><span class="fr-text">Orientée résultats</span><span class="en-text">Results-oriented</span></p></div>
-    </div>
-  </div>
 </section>
 
 <!-- SERVICES -->
@@ -747,39 +837,137 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
   </div>
 </section>
 
-<!-- ÉVÉNEMENTS -->
-<section id="projets" class="sec sec-w">
+<!-- AGENDA — EXPÉRIENCES & ÉVÉNEMENTS À VENIR -->
+<section id="agenda" class="sec sec-w">
   <div class="sh">
-    <div class="stag"><span class="fr-text">Réalisations terrain</span><span class="en-text">Field achievements</span></div>
-    <h2 class="st"><span class="fr-text">Événements <em>marquants</em></span><span class="en-text">Key <em>events</em></span></h2>
+    <div class="stag"><span class="fr-text">Places limitées · Réservation ouverte</span><span class="en-text">Limited spots · Booking open</span></div>
+    <h2 class="st"><span class="fr-text">Expériences &amp; <em>Événements à venir</em></span><span class="en-text">Upcoming <em>Experiences &amp; Events</em></span></h2>
     <div class="stbar"></div>
-    <p class="sd"><span class="fr-text">Contributions opérationnelles sur des événements culturels, corporate et touristiques</span><span class="en-text">Operational contributions on cultural, corporate and tourism events</span></p>
+    <p class="sd"><span class="fr-text">Voyages spirituels, retraites bien-être et journées ressourcement — rejoignez l'aventure</span><span class="en-text">Spiritual journeys, wellness retreats and reset days — join the adventure</span></p>
   </div>
-  <div class="evg">
-    <div class="evc">
-      <div class="evh"><span class="evt"><span class="fr-text">Festival Culturel</span><span class="en-text">Cultural Festival</span></span></div>
-      <h3>Akan Festival &amp; Akan Brunch</h3>
-      <div class="evrl"><span class="fr-text">Coordinatrice Logistique &amp; Administrative</span><span class="en-text">Logistics &amp; Administrative Coordinator</span></div>
-      <p><span class="fr-text">Coordination logistique d'un festival culturel célébrant les peuples Akan. Accueil et orientation sur des flux de +600 participants. Gestion des accréditations, planification des espaces et coordination des prestataires.</span><span class="en-text">Logistics coordination of a cultural festival celebrating the Akan peoples. Reception and orientation for 600+ attendees. Accreditation management, space planning and supplier coordination.</span></p>
-      <div class="evtags"><span class="evtag">+600 participants</span><span class="evtag">Logistique</span><span class="evtag">Front office</span><span class="evtag">Prestataires</span></div>
-    </div>
-    <div class="evc">
-      <div class="evh"><span class="evt"><span class="fr-text">Networking Mensuel</span><span class="en-text">Monthly Networking</span></span></div>
-      <h3>Les Jeudis Abidjanais</h3>
-      <div class="evrl"><span class="fr-text">Organisatrice &amp; Responsable Accueil</span><span class="en-text">Organiser &amp; Reception Manager</span></div>
-      <p><span class="fr-text">Planification et coordination d'événements mensuels de networking réunissant professionnels et entrepreneurs. Communication digitale sur Instagram, Facebook et WhatsApp Business.</span><span class="en-text">Planning and coordination of monthly networking events bringing together professionals and entrepreneurs. Digital communication on Instagram, Facebook and WhatsApp Business.</span></p>
-      <div class="evtags"><span class="evtag">Networking</span><span class="evtag">Instagram / Facebook</span><span class="evtag"><span class="fr-text">Accueil</span><span class="en-text">Reception</span></span></div>
+  <div class="ag-grid">
+
+    <!-- 1. OMRA OCTOBRE 2026 -->
+    <div class="ag-card">
+      <div class="ag-banner ag-banner-omra">
+        <div class="ag-type"><span class="ag-type-dot"></span><span class="fr-text">Voyage Spirituel · Départ Abidjan</span><span class="en-text">Spiritual Journey · Departure Abidjan</span></div>
+        <div class="ag-title"><span class="fr-text">Omra — Octobre 2026</span><span class="en-text">Umrah — October 2026</span></div>
+        <div class="ag-dates">17 – 27 octobre 2026 · 11 jours / 10 nuits</div>
+      </div>
+      <div class="ag-body">
+        <div class="ag-orga">✈ <span class="fr-text">Organisé par Mariam KABA · Départ depuis Abidjan</span><span class="en-text">Organised by Mariam KABA · Departure from Abidjan</span></div>
+        <p class="ag-desc"><span class="fr-text">Un voyage sacré organisé de A à Z — visa, vols, hôtels 5★ à La Mecque &amp; Médine, 2 cours/jour avec nos chouyoukh, excursions spirituelles exclusives &amp; activités immersives.</span><span class="en-text">A sacred journey fully organised — visa, flights, 5★ hotels in Mecca &amp; Medina, 2 daily lessons with our chouyoukh, exclusive spiritual excursions &amp; immersive activities.</span></p>
+        <ul class="ag-includes">
+          <li><span class="fr-text">Visa Arabie Saoudite + vols aller-retour depuis Abidjan</span><span class="en-text">Saudi Arabia visa + return flights from Abidjan</span></li>
+          <li><span class="fr-text">Hôtels 5★ La Mecque &amp; Médine, petit-déjeuner inclus</span><span class="en-text">5★ hotels Mecca &amp; Medina, breakfast included</span></li>
+          <li><span class="fr-text">21 visites religieuses, historiques &amp; secrètes</span><span class="en-text">21 religious, historical &amp; secret visits</span></li>
+          <li><span class="fr-text">Soirée feu de camp dans le désert · Montée du Mont Uhud</span><span class="en-text">Desert bonfire evening · Uhud Mountain ascent</span></li>
+          <li><span class="fr-text">Pack cadeau pèlerin · Transferts inclus · Encadrement 24h/24</span><span class="en-text">Pilgrim gift pack · Transfers included · 24/7 support</span></li>
+        </ul>
+        <div class="ag-tags"><span class="ag-tag">✈ Abidjan</span><span class="ag-tag"><span class="fr-text">La Mecque · Médine</span><span class="en-text">Mecca · Medina</span></span><span class="ag-tag">5★</span><span class="ag-tag"><span class="fr-text">Paiement facilité</span><span class="en-text">Flexible payment</span></span></div>
+      </div>
+      <div class="ag-footer">
+        <div class="ag-price">
+          <span class="ag-price-label"><span class="fr-text">À partir de</span><span class="en-text">From</span></span>
+          <span class="ag-price-amount">2 845 000 <small style="font-size:13px;">FCFA</small></span>
+          <span class="ag-price-note"><span class="fr-text">Chambre quadruple · Départ Abidjan</span><span class="en-text">Quad room · Departure Abidjan</span></span>
+        </div>
+        <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'Omra%20d'Octobre%202026%20(17-27%20oct.)%20%F0%9F%95%8C" target="_blank" rel="noopener" class="ag-cta"><span class="fr-text">Réserver →</span><span class="en-text">Book now →</span></a>
+      </div>
+      <button class="ag-detail-btn" onclick="openModal('modal-omra-oct')"><span class="fr-text">Voir tous les tarifs par type de chambre →</span><span class="en-text">See all room rates →</span></button>
     </div>
 
-    <div class="evc">
-      <div class="evh"><span class="evt"><span class="fr-text">Team Building &amp; Voyages</span><span class="en-text">Team Building &amp; Travel</span></span></div>
-      <h3><span class="fr-text">Team Building, Séminaires &amp; Voyages Omra</span><span class="en-text">Team Building, Seminars &amp; Umrah Trips</span></h3>
-      <div class="evrl"><span class="fr-text">Chef de Projet &amp; Coordinatrice Voyages</span><span class="en-text">Project Lead &amp; Travel Coordinator</span></div>
-      <p><span class="fr-text">Organisation complète de team building corporate, séminaires et voyages Omra groupes. Billetterie, hébergements, visas, programme de visite, restauration, transport et suivi post-voyage.</span><span class="en-text">Full organisation of corporate team building, seminars and group Umrah trips. Ticketing, accommodation, visas, itinerary, catering, transport and post-trip follow-up.</span></p>
-      <div class="evtags"><span class="evtag">Team building</span><span class="evtag">Omra / Umrah</span><span class="evtag"><span class="fr-text">Billetterie</span><span class="en-text">Ticketing</span></span><span class="evtag">Visa</span></div>
+    <!-- 2. OMRA DÉCEMBRE 2026 – JANVIER 2027 -->
+    <div class="ag-card">
+      <div class="ag-banner ag-banner-omra">
+        <div class="ag-type"><span class="ag-type-dot"></span><span class="fr-text">Voyage Spirituel · Départ Abidjan</span><span class="en-text">Spiritual Journey · Departure Abidjan</span></div>
+        <div class="ag-title"><span class="fr-text">Omra — Décembre 2026 / Janvier 2027</span><span class="en-text">Umrah — December 2026 / January 2027</span></div>
+        <div class="ag-dates">24 déc. 2026 – 3 jan. 2027 · 11 jours / 10 nuits</div>
+      </div>
+      <div class="ag-body">
+        <div class="ag-orga">✈ <span class="fr-text">Organisé par Mariam KABA · Départ depuis Abidjan</span><span class="en-text">Organised by Mariam KABA · Departure from Abidjan</span></div>
+        <p class="ag-desc"><span class="fr-text">Commencez la nouvelle année au cœur des lieux saints. Programme complet organisé de A à Z, dans l'ambiance particulière du passage au Nouvel An entre La Mecque et Médine.</span><span class="en-text">Start the New Year at the heart of the holy sites. Full A-to-Z programme, with the special atmosphere of ringing in the New Year between Mecca and Medina.</span></p>
+        <ul class="ag-includes">
+          <li><span class="fr-text">Visa Arabie Saoudite + vols aller-retour depuis Abidjan</span><span class="en-text">Saudi Arabia visa + return flights from Abidjan</span></li>
+          <li><span class="fr-text">Hôtels 5★ La Mecque &amp; Médine, petit-déjeuner inclus</span><span class="en-text">5★ hotels Mecca &amp; Medina, breakfast included</span></li>
+          <li><span class="fr-text">2 cours/jour avec chouyoukh · 21 visites exclusives</span><span class="en-text">2 daily lessons · 21 exclusive visits</span></li>
+          <li><span class="fr-text">Excursion désert, Badr, Uhud &amp; grottes historiques</span><span class="en-text">Desert, Badr, Uhud &amp; historical caves excursions</span></li>
+          <li><span class="fr-text">Pack cadeau · Encadrement 24h/24 · Paiement facilité</span><span class="en-text">Gift pack · 24/7 support · Flexible payment</span></li>
+        </ul>
+        <div class="ag-tags"><span class="ag-tag">✈ Abidjan</span><span class="ag-tag"><span class="fr-text">La Mecque · Médine</span><span class="en-text">Mecca · Medina</span></span><span class="ag-tag"><span class="fr-text">Nouvel An</span><span class="en-text">New Year</span></span><span class="ag-tag"><span class="fr-text">Paiement facilité</span><span class="en-text">Flexible payment</span></span></div>
+      </div>
+      <div class="ag-footer">
+        <div class="ag-price">
+          <span class="ag-price-label"><span class="fr-text">À partir de</span><span class="en-text">From</span></span>
+          <span class="ag-price-amount">2 915 000 <small style="font-size:13px;">FCFA</small></span>
+          <span class="ag-price-note"><span class="fr-text">Chambre quadruple · Départ Abidjan</span><span class="en-text">Quad room · Departure Abidjan</span></span>
+        </div>
+        <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'Omra%20de%20D%C3%A9cembre%202026%20%2F%20Janvier%202027%20%F0%9F%95%8C" target="_blank" rel="noopener" class="ag-cta"><span class="fr-text">Réserver →</span><span class="en-text">Book now →</span></a>
+      </div>
+      <button class="ag-detail-btn" onclick="openModal('modal-omra-dec')"><span class="fr-text">Voir tous les tarifs par type de chambre →</span><span class="en-text">See all room rates →</span></button>
     </div>
+
+    <!-- 3. RETRAITE WOMEN WELLNESS -->
+    <div class="ag-card">
+      <div class="ag-banner ag-banner-wellness">
+        <div class="ag-type"><span class="ag-type-dot"></span><span class="fr-text">Retraite Bien-être · Côte d'Ivoire</span><span class="en-text">Wellness Retreat · Côte d'Ivoire</span></div>
+        <div class="ag-title"><span class="fr-text">Retraite Women Wellness</span><span class="en-text">Women Wellness Retreat</span></div>
+        <div class="ag-dates"><span class="fr-text">5 jours · San Pedro, Grand Béréby &amp; Sassandra</span><span class="en-text">5 days · San Pedro, Grand Béréby &amp; Sassandra</span></div>
+      </div>
+      <div class="ag-body">
+        <div class="ag-orga">🌿 <span class="fr-text">Organisé par Mariam KABA · Places limitées</span><span class="en-text">Organised by Mariam KABA · Limited spots</span></div>
+        <p class="ag-desc"><span class="fr-text">Un séjour ressourcement 100% féminin au sud de la Côte d'Ivoire. Entre plages sauvages, forêt tropicale et communautés locales — reconnectez-vous à vous-même loin du bruit.</span><span class="en-text">A 100% female wellness stay in southern Côte d'Ivoire. Between wild beaches, tropical forest and local communities — reconnect with yourself, far from the noise.</span></p>
+        <ul class="ag-includes">
+          <li><span class="fr-text">Hébergement éco-lodge en bord de mer · Petit-déjeuner inclus</span><span class="en-text">Eco-lodge by the sea · Breakfast included</span></li>
+          <li><span class="fr-text">Séances yoga matinales &amp; méditation guidée</span><span class="en-text">Morning yoga sessions &amp; guided meditation</span></li>
+          <li><span class="fr-text">Massages bien-être &amp; soins corps naturels</span><span class="en-text">Wellness massages &amp; natural body treatments</span></li>
+          <li><span class="fr-text">Excursions : cascade, forêt, piroguiers locaux</span><span class="en-text">Excursions: waterfall, forest, local pirogue rides</span></li>
+          <li><span class="fr-text">Transfert depuis Abidjan · Groupes de 8 femmes max.</span><span class="en-text">Transfer from Abidjan · Groups of 8 women max.</span></li>
+        </ul>
+        <div class="ag-tags"><span class="ag-tag">San Pedro</span><span class="ag-tag">Grand Béréby</span><span class="ag-tag">Sassandra</span><span class="ag-tag"><span class="fr-text">Women only</span><span class="en-text">Women only</span></span></div>
+      </div>
+      <div class="ag-footer">
+        <div class="ag-price">
+          <span class="ag-price-label"><span class="fr-text">À partir de</span><span class="en-text">From</span></span>
+          <span class="ag-price-amount">185 000 <small style="font-size:13px;">FCFA</small></span>
+          <span class="ag-price-note"><span class="fr-text">Par personne · Chambre partagée</span><span class="en-text">Per person · Shared room</span></span>
+        </div>
+        <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9e%20par%20la%20Retraite%20Women%20Wellness%20%F0%9F%8C%BF" target="_blank" rel="noopener" class="ag-cta"><span class="fr-text">S'inscrire →</span><span class="en-text">Register →</span></a>
+      </div>
+    </div>
+
+    <!-- 4. RESET DAY — BAIE DES MILLIARDAIRES -->
+    <div class="ag-card">
+      <div class="ag-banner ag-banner-reset">
+        <div class="ag-type"><span class="ag-type-dot"></span><span class="fr-text">Journée Ressourcement · Abidjan</span><span class="en-text">Reset Day · Abidjan</span></div>
+        <div class="ag-title"><span class="fr-text">Reset Day — Baie des Milliardaires</span><span class="en-text">Reset Day — Baie des Milliardaires</span></div>
+        <div class="ag-dates"><span class="fr-text">1 journée immersive · Cocody, Abidjan</span><span class="en-text">1 immersive day · Cocody, Abidjan</span></div>
+      </div>
+      <div class="ag-body">
+        <div class="ag-orga">✨ <span class="fr-text">Organisé par Mariam KABA · Groupe fermé</span><span class="en-text">Organised by Mariam KABA · Closed group</span></div>
+        <p class="ag-desc"><span class="fr-text">Une journée de déconnexion complète au cœur de l'un des cadres les plus exclusifs d'Abidjan. Networking positif, activités outdoor sur l'eau et moments de reconnexion à soi.</span><span class="en-text">A full disconnection day in one of Abidjan's most exclusive settings. Positive networking, outdoor water activities and moments of inner reconnection.</span></p>
+        <ul class="ag-includes">
+          <li><span class="fr-text">Accès espace premium en bord de baie</span><span class="en-text">Premium waterfront space access</span></li>
+          <li><span class="fr-text">Brunch &amp; snacks sains inclus toute la journée</span><span class="en-text">Brunch &amp; healthy snacks included all day</span></li>
+          <li><span class="fr-text">Activités nautiques : kayak, paddle, bateau</span><span class="en-text">Water activities: kayak, paddle, boat</span></li>
+          <li><span class="fr-text">Atelier vision board &amp; networking intentionnel</span><span class="en-text">Vision board workshop &amp; intentional networking</span></li>
+          <li><span class="fr-text">Séance photo souvenir · Cadeaux surprises</span><span class="en-text">Souvenir photoshoot · Surprise gifts</span></li>
+        </ul>
+        <div class="ag-tags"><span class="ag-tag"><span class="fr-text">Baie des Milliardaires</span><span class="en-text">Milliardaires Bay</span></span><span class="ag-tag">Networking</span><span class="ag-tag">Outdoor</span><span class="ag-tag">Abidjan</span></div>
+      </div>
+      <div class="ag-footer">
+        <div class="ag-price">
+          <span class="ag-price-label"><span class="fr-text">À partir de</span><span class="en-text">From</span></span>
+          <span class="ag-price-amount">45 000 <small style="font-size:13px;">FCFA</small></span>
+          <span class="ag-price-note"><span class="fr-text">Par personne · 15 places maximum</span><span class="en-text">Per person · 15 spots maximum</span></span>
+        </div>
+        <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Reset%20Day%20%E2%80%93%20Bai%CC%88e%20des%20Milliardaires%20%E2%9C%A8" target="_blank" rel="noopener" class="ag-cta"><span class="fr-text">Réserver ma place →</span><span class="en-text">Reserve my spot →</span></a>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- PARCOURS -->
 <section id="parcours" class="sec">
@@ -789,6 +977,15 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <div class="stbar"></div>
     <p class="sd"><span class="fr-text">Une progression constante — de l'assistanat commercial au pilotage de +30 projets</span><span class="en-text">Steady progression — from commercial assistant to leading 30+ projects</span></p>
   </div>
+
+  <!-- ONGLETS PARCOURS -->
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" data-tab="exp" role="tab"><span class="fr-text">Expérience professionnelle</span><span class="en-text">Work experience</span></button>
+    <button class="tab-btn" data-tab="proj" role="tab"><span class="fr-text">Projets événementiels</span><span class="en-text">Event projects</span></button>
+  </div>
+
+  <!-- PANEL 1 : EXPÉRIENCE -->
+  <div class="tab-panel active" id="tab-exp">
   <div class="tl">
     <div class="tli">
       <div class="tld">◆</div>
@@ -868,88 +1065,141 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       </div>
     </div>
   </div>
+  </div><!-- /tab-panel exp -->
+
+  <!-- PANEL 2 : PROJETS ÉVÉNEMENTIELS -->
+  <div class="tab-panel" id="tab-proj">
+    <p style="font-size:13.5px;color:var(--ink-3);margin-bottom:32px;"><span class="fr-text">Contributions opérationnelles sur des événements culturels, corporate et touristiques</span><span class="en-text">Operational contributions on cultural, corporate and tourism events</span></p>
+    <div class="evg">
+      <div class="evc">
+        <div class="evh"><span class="evt"><span class="fr-text">Festival Culturel</span><span class="en-text">Cultural Festival</span></span></div>
+        <h3>Akan Festival &amp; Akan Brunch</h3>
+        <div class="evrl"><span class="fr-text">Coordinatrice Logistique &amp; Administrative</span><span class="en-text">Logistics &amp; Administrative Coordinator</span></div>
+        <p><span class="fr-text">Coordination logistique d'un festival culturel célébrant les peuples Akan. Accueil et orientation sur des flux de +600 participants. Gestion des accréditations, planification des espaces et coordination des prestataires.</span><span class="en-text">Logistics coordination of a cultural festival celebrating the Akan peoples. Reception and orientation for 600+ attendees. Accreditation management, space planning and supplier coordination.</span></p>
+        <div class="evtags"><span class="evtag">+600 participants</span><span class="evtag">Logistique</span><span class="evtag">Front office</span><span class="evtag">Prestataires</span></div>
+      </div>
+      <div class="evc">
+        <div class="evh"><span class="evt"><span class="fr-text">Networking Mensuel</span><span class="en-text">Monthly Networking</span></span></div>
+        <h3>Les Jeudis Abidjanais</h3>
+        <div class="evrl"><span class="fr-text">Organisatrice &amp; Responsable Accueil</span><span class="en-text">Organiser &amp; Reception Manager</span></div>
+        <p><span class="fr-text">Planification et coordination d'événements mensuels de networking réunissant professionnels et entrepreneurs. Communication digitale sur Instagram, Facebook et WhatsApp Business.</span><span class="en-text">Planning and coordination of monthly networking events bringing together professionals and entrepreneurs. Digital communication on Instagram, Facebook and WhatsApp Business.</span></p>
+        <div class="evtags"><span class="evtag">Networking</span><span class="evtag">Instagram / Facebook</span><span class="evtag"><span class="fr-text">Accueil</span><span class="en-text">Reception</span></span></div>
+      </div>
+      <div class="evc">
+        <div class="evh"><span class="evt"><span class="fr-text">Team Building &amp; Voyages</span><span class="en-text">Team Building &amp; Travel</span></span></div>
+        <h3><span class="fr-text">Team Building, Séminaires &amp; Voyages Omra</span><span class="en-text">Team Building, Seminars &amp; Umrah Trips</span></h3>
+        <div class="evrl"><span class="fr-text">Chef de Projet &amp; Coordinatrice Voyages</span><span class="en-text">Project Lead &amp; Travel Coordinator</span></div>
+        <p><span class="fr-text">Organisation complète de team building corporate, séminaires et voyages Omra groupes. Billetterie, hébergements, visas, programme de visite, restauration, transport et suivi post-voyage.</span><span class="en-text">Full organisation of corporate team building, seminars and group Umrah trips. Ticketing, accommodation, visas, itinerary, catering, transport and post-trip follow-up.</span></p>
+        <div class="evtags"><span class="evtag">Team building</span><span class="evtag">Omra / Umrah</span><span class="evtag"><span class="fr-text">Billetterie</span><span class="en-text">Ticketing</span></span><span class="evtag">Visa</span></div>
+      </div>
+    </div>
+  </div><!-- /tab-panel proj -->
+
 </section>
 
-<!-- FORMATIONS -->
 <section id="formations" class="sec sec-w">
   <div class="sh">
     <div class="stag"><span class="fr-text">Apprentissage continu</span><span class="en-text">Continuous learning</span></div>
-    <h2 class="st"><span class="fr-text">Formations &amp; <em>Certifications</em></span><span class="en-text">Education &amp; <em>Certifications</em></span></h2>
+    <h2 class="st"><span class="fr-text">Parcours &amp; <em>Formations</em></span><span class="en-text">Education &amp; <em>Training</em></span></h2>
     <div class="stbar"></div>
-    <p class="sd"><span class="fr-text">Un investissement constant dans le développement des compétences</span><span class="en-text">A constant investment in skills development</span></p>
+    <p class="sd"><span class="fr-text">Un investissement constant dans le développement des compétences — académique, professionnel et terrain</span><span class="en-text">A constant investment in skills development — academic, professional and hands-on</span></p>
   </div>
-  <div class="fmg">
-    <div class="fmc">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg></div>
-      <h3><span class="fr-text">Certificat Responsable RH</span><span class="en-text">HR Manager Certificate</span></h3>
-      <p class="fmorg">Glory Management Consulting Group — CI</p>
-      <div class="fmmod">
-        <p class="fmmt"><span class="fr-text">Modules</span><span class="en-text">Modules</span></p>
-        <span class="modpill"><span class="fr-text">Droit du travail ivoirien</span><span class="en-text">Ivorian labour law</span></span>
-        <span class="modpill"><span class="fr-text">Recrutement &amp; intégration</span><span class="en-text">Recruitment &amp; onboarding</span></span>
-        <span class="modpill"><span class="fr-text">Administration du personnel</span><span class="en-text">HR administration</span></span>
-        <span class="modpill"><span class="fr-text">Gestion de la paie</span><span class="en-text">Payroll management</span></span>
-        <span class="modpill"><span class="fr-text">Stratégie RH &amp; GPEC</span><span class="en-text">HR strategy &amp; workforce planning</span></span>
-        <span class="modpill"><span class="fr-text">Formation &amp; développement</span><span class="en-text">Training &amp; development</span></span>
-        <span class="modpill"><span class="fr-text">Management d'équipe</span><span class="en-text">Team management</span></span>
-        <span class="modpill"><span class="fr-text">Entretiens professionnels</span><span class="en-text">Professional interviews</span></span>
+
+  <!-- ONGLETS FORMATIONS -->
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" data-tab="fac" role="tab"><span class="fr-text">Parcours académique</span><span class="en-text">Academic path</span></button>
+    <button class="tab-btn" data-tab="cert" role="tab"><span class="fr-text">Certifications</span><span class="en-text">Certifications</span></button>
+    <button class="tab-btn" data-tab="encours" role="tab"><span class="fr-text">En cours</span><span class="en-text">In progress</span></button>
+  </div>
+
+  <!-- PANEL 1 : ACADÉMIQUE -->
+  <div class="tab-panel active" id="tab-fac">
+    <div class="fmg" style="grid-template-columns:1fr 1fr;">
+      <div class="fmc">
+        <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h7a1 1 0 011 1v10a1 1 0 01-1 1H3"/><path d="M3 2a2 2 0 000 4M3 6a2 2 0 000 8M3 14a1 1 0 010-12"/><line x1="10" y1="7" x2="13.5" y2="7"/></svg></div>
+        <h3><span class="fr-text">Marketing &amp; Publicité</span><span class="en-text">Marketing &amp; Advertising</span></h3>
+        <p class="fmorg">PIGIER CI — Abidjan</p>
+        <div class="fmmod">
+          <p class="fmmt"><span class="fr-text">Compétences acquises</span><span class="en-text">Skills gained</span></p>
+          <span class="modpill"><span class="fr-text">Marketing stratégique</span><span class="en-text">Strategic marketing</span></span>
+          <span class="modpill"><span class="fr-text">Communication publicitaire</span><span class="en-text">Advertising communication</span></span>
+          <span class="modpill"><span class="fr-text">Marketing digital</span><span class="en-text">Digital marketing</span></span>
+          <span class="modpill"><span class="fr-text">Gestion de projet</span><span class="en-text">Project management</span></span>
+        </div>
+        <span class="sbadge stobt"><span class="fr-text">Parcours académique</span><span class="en-text">Academic pathway</span></span>
       </div>
-      <span class="sbadge stenc"><span class="fr-text">En cours · Avr. 2026</span><span class="en-text">In progress · Apr. 2026</span></span>
-    </div>
-    <div class="fmc">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 2h7a1 1 0 011 1v10a1 1 0 01-1 1H3"/><path d="M3 2a2 2 0 000 4M3 6a2 2 0 000 8M3 14a1 1 0 010-12"/><line x1="10" y1="7" x2="13.5" y2="7"/></svg></div>
-      <h3><span class="fr-text">Licence PRO — Marketing &amp; Publicité</span><span class="en-text">Professional Degree — Marketing &amp; Advertising</span></h3>
-      <p class="fmorg">PIGIER CI — Abidjan</p>
-      <div class="fmmod">
-        <p class="fmmt"><span class="fr-text">Compétences</span><span class="en-text">Skills</span></p>
-        <span class="modpill"><span class="fr-text">Marketing stratégique</span><span class="en-text">Strategic marketing</span></span>
-        <span class="modpill"><span class="fr-text">Communication publicitaire</span><span class="en-text">Advertising communication</span></span>
-        <span class="modpill"><span class="fr-text">Marketing digital</span><span class="en-text">Digital marketing</span></span>
-        <span class="modpill"><span class="fr-text">Gestion de projet</span><span class="en-text">Project management</span></span>
+      <div class="fmc">
+        <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="14" x2="14" y2="14"/><rect x="3" y="8.5" width="3" height="5.5"/><rect x="6.5" y="5.5" width="3" height="8.5"/><rect x="10" y="2.5" width="3" height="11.5"/></svg></div>
+        <h3><span class="fr-text">Gestion Commerciale</span><span class="en-text">Commercial Management</span></h3>
+        <p class="fmorg">PIGIER CI — Abidjan</p>
+        <div class="fmmod">
+          <p class="fmmt"><span class="fr-text">Compétences acquises</span><span class="en-text">Skills gained</span></p>
+          <span class="modpill"><span class="fr-text">Gestion commerciale</span><span class="en-text">Commercial management</span></span>
+          <span class="modpill"><span class="fr-text">Relation client</span><span class="en-text">Customer relations</span></span>
+          <span class="modpill"><span class="fr-text">Négociation</span><span class="en-text">Negotiation</span></span>
+          <span class="modpill"><span class="fr-text">Analyse financière</span><span class="en-text">Financial analysis</span></span>
+        </div>
+        <span class="sbadge stobt"><span class="fr-text">Parcours académique</span><span class="en-text">Academic pathway</span></span>
       </div>
-    </div>
-    <div class="fmc">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><line x1="2" y1="14" x2="14" y2="14"/><rect x="3" y="8.5" width="3" height="5.5"/><rect x="6.5" y="5.5" width="3" height="8.5"/><rect x="10" y="2.5" width="3" height="11.5"/></svg></div>
-      <h3>BTS — <span class="fr-text">Gestion Commerciale</span><span class="en-text">Commercial Management</span></h3>
-      <p class="fmorg">PIGIER CI — Abidjan</p>
-      <div class="fmmod">
-        <p class="fmmt"><span class="fr-text">Compétences</span><span class="en-text">Skills</span></p>
-        <span class="modpill"><span class="fr-text">Gestion commerciale</span><span class="en-text">Commercial management</span></span>
-        <span class="modpill"><span class="fr-text">Relation client</span><span class="en-text">Customer relations</span></span>
-        <span class="modpill"><span class="fr-text">Négociation</span><span class="en-text">Negotiation</span></span>
-      </div>
-    </div>
-    <div class="fmc">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="10" r="4.5"/><path d="M5.5 5.5L4 2h8l-1.5 3.5"/><line x1="6" y1="2" x2="8" y2="5.5"/><line x1="10" y1="2" x2="8" y2="5.5"/></svg></div>
-      <h3><span class="fr-text">Certification Microsoft Excel</span><span class="en-text">Microsoft Excel Certification</span></h3>
-      <p class="fmorg">Microsoft — Office 2016</p>
-      <div class="fmmod">
-        <p class="fmmt"><span class="fr-text">Validé</span><span class="en-text">Validated</span></p>
-        <span class="modpill">TCD / Pivot tables</span>
-        <span class="modpill"><span class="fr-text">Formules avancées</span><span class="en-text">Advanced formulas</span></span>
-        <span class="modpill"><span class="fr-text">Graphiques</span><span class="en-text">Charts</span></span>
-      </div>
-      <span class="sbadge stcer"><span class="fr-text">Certifiée</span><span class="en-text">Certified</span></span>
-    </div>
-    <div class="fmc">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></div>
-      <h3>CLOM — <span class="fr-text">Tourisme Durable &amp; Patrimoine Culturel</span><span class="en-text">Sustainable Tourism &amp; Cultural Heritage</span></h3>
-      <p class="fmorg"><span class="fr-text">Organisation Internationale de la Francophonie (OIF)</span><span class="en-text">International Organisation of La Francophonie (OIF)</span></p>
-      <div class="fmmod">
-        <p class="fmmt">Topics</p>
-        <span class="modpill"><span class="fr-text">Tourisme responsable</span><span class="en-text">Responsible tourism</span></span>
-        <span class="modpill"><span class="fr-text">Patrimoine &amp; culture</span><span class="en-text">Heritage &amp; culture</span></span>
-        <span class="modpill">Écotourisme</span>
-      </div>
-      <span class="sbadge stcom"><span class="fr-text">Complété</span><span class="en-text">Completed</span></span>
-    </div>
-    <div class="fmc" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--gold-pale);border-style:dashed;">
-      <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 3.5C6.5 2.5 4 2 2 2v11c2 0 4.5.5 6 1.5V3.5z"/><path d="M8 3.5C9.5 2.5 12 2 14 2v11c-2 0-4.5.5-6 1.5V3.5z"/></svg></div>
-      <h3 style="margin-bottom:8px;"><span class="fr-text">En développement continu</span><span class="en-text">Continuously learning</span></h3>
-      <p style="font-size:12px;color:var(--ink-3);line-height:1.6;"><span class="fr-text">Veille active sur les tendances RH, événementiel, tourisme halal et office management en Afrique de l'Ouest.</span><span class="en-text">Active monitoring of HR, events, halal tourism and office management trends in West Africa.</span></p>
     </div>
   </div>
+
+  <!-- PANEL 2 : CERTIFICATIONS -->
+  <div class="tab-panel" id="tab-cert">
+    <div class="fmg" style="grid-template-columns:1fr 1fr;">
+      <div class="fmc">
+        <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="10" r="4.5"/><path d="M5.5 5.5L4 2h8l-1.5 3.5"/><line x1="6" y1="2" x2="8" y2="5.5"/><line x1="10" y1="2" x2="8" y2="5.5"/></svg></div>
+        <h3><span class="fr-text">Certification Microsoft Excel</span><span class="en-text">Microsoft Excel Certification</span></h3>
+        <p class="fmorg">Microsoft — Office 2016</p>
+        <div class="fmmod">
+          <p class="fmmt"><span class="fr-text">Validé</span><span class="en-text">Validated</span></p>
+          <span class="modpill">TCD / Pivot tables</span>
+          <span class="modpill"><span class="fr-text">Formules avancées</span><span class="en-text">Advanced formulas</span></span>
+          <span class="modpill"><span class="fr-text">Graphiques &amp; macros</span><span class="en-text">Charts &amp; macros</span></span>
+        </div>
+        <span class="sbadge stcer"><span class="fr-text">Certifiée</span><span class="en-text">Certified</span></span>
+      </div>
+      <div class="fmc">
+        <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 2c-2 2-3 4-3 6s1 4 3 6"/><path d="M8 2c2 2 3 4 3 6s-1 4-3 6"/><line x1="2" y1="8" x2="14" y2="8"/></svg></div>
+        <h3>CLOM — <span class="fr-text">Tourisme Durable &amp; Patrimoine Culturel</span><span class="en-text">Sustainable Tourism &amp; Cultural Heritage</span></h3>
+        <p class="fmorg"><span class="fr-text">Organisation Internationale de la Francophonie (OIF)</span><span class="en-text">International Organisation of La Francophonie (OIF)</span></p>
+        <div class="fmmod">
+          <p class="fmmt">Topics</p>
+          <span class="modpill"><span class="fr-text">Tourisme responsable</span><span class="en-text">Responsible tourism</span></span>
+          <span class="modpill"><span class="fr-text">Patrimoine &amp; culture</span><span class="en-text">Heritage &amp; culture</span></span>
+          <span class="modpill">Écotourisme</span>
+        </div>
+        <span class="sbadge stcom"><span class="fr-text">Formation suivie</span><span class="en-text">Completed</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 3 : EN COURS -->
+  <div class="tab-panel" id="tab-encours">
+    <div class="fmg" style="grid-template-columns:1fr;">
+      <div class="fmc">
+        <div class="fmi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 7L8 4l6.5 3L8 10l-6.5-3z"/><path d="M4.5 8.5v3.5c0 1 1.5 2 3.5 2s3.5-1 3.5-2V8.5"/><line x1="14.5" y1="7" x2="14.5" y2="10.5"/></svg></div>
+        <h3><span class="fr-text">Responsable Ressources Humaines</span><span class="en-text">HR Manager</span></h3>
+        <p class="fmorg">Glory Management Consulting Group — CI</p>
+        <div class="fmmod">
+          <p class="fmmt"><span class="fr-text">Modules</span><span class="en-text">Modules</span></p>
+          <span class="modpill"><span class="fr-text">Droit du travail ivoirien</span><span class="en-text">Ivorian labour law</span></span>
+          <span class="modpill"><span class="fr-text">Recrutement &amp; intégration</span><span class="en-text">Recruitment &amp; onboarding</span></span>
+          <span class="modpill"><span class="fr-text">Administration du personnel</span><span class="en-text">HR administration</span></span>
+          <span class="modpill"><span class="fr-text">Gestion de la paie</span><span class="en-text">Payroll management</span></span>
+          <span class="modpill"><span class="fr-text">Stratégie RH &amp; GPEC</span><span class="en-text">HR strategy &amp; workforce planning</span></span>
+          <span class="modpill"><span class="fr-text">Management d'équipe</span><span class="en-text">Team management</span></span>
+        </div>
+        <span class="sbadge stenc"><span class="fr-text">En cours · 2026</span><span class="en-text">In progress · 2026</span></span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;padding:20px;background:var(--gold-pale);border-radius:var(--radius);border:1px dashed var(--gold);">
+      <p style="font-size:13px;color:var(--ink-3);"><span class="fr-text">Veille active sur les tendances RH, événementiel, tourisme halal et office management en Afrique de l'Ouest.</span><span class="en-text">Active monitoring of HR, events, halal tourism and office management trends in West Africa.</span></p>
+    </div>
+  </div>
+
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="sec">
@@ -1016,6 +1266,26 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
       </a>
     </div>
   </div>
+
+  <!-- FAQ -->
+  <div class="faq-block">
+    <p class="faq-title" style="text-align:center;"><span class="fr-text">Questions fréquentes</span><span class="en-text">Frequently asked questions</span></p>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <p class="faq-q"><span class="fr-text">Quel est votre délai de réponse ?</span><span class="en-text">What is your response time?</span></p>
+        <p class="faq-a"><span class="fr-text">Je réponds à tous les messages sous 24h ouvrées, souvent bien plus vite via WhatsApp.</span><span class="en-text">I reply to all messages within 24 business hours, often much faster via WhatsApp.</span></p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q"><span class="fr-text">Travaillez-vous à distance ?</span><span class="en-text">Do you work remotely?</span></p>
+        <p class="faq-a"><span class="fr-text">Oui, je suis disponible en Full Remote pour toute entreprise en Afrique ou à l'international, sans contrainte géographique.</span><span class="en-text">Yes, I'm available fully remote for any company across Africa or internationally, with no geographic constraints.</span></p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q"><span class="fr-text">Est-ce que le premier échange est gratuit ?</span><span class="en-text">Is the first exchange free?</span></p>
+        <p class="faq-a"><span class="fr-text">Absolument. Le devis et la consultation initiale sont toujours gratuits et sans engagement.</span><span class="en-text">Absolutely. The quote and initial consultation are always free and no-commitment.</span></p>
+      </div>
+    </div>
+  </div>
+
   <div class="refsec">
     <p class="reftag"><span class="fr-text">• Références Professionnelles •</span><span class="en-text">• Professional References •</span></p>
     <p class="refdesc"><span class="fr-text">Des professionnels qui témoignent de mon sérieux</span><span class="en-text">Professionals who vouch for my expertise</span></p>
@@ -1303,5 +1573,135 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   });
 });
 </script>
+<!-- MODAL OMRA OCTOBRE 2026 -->
+<div class="modal-ov" id="modal-omra-oct" role="dialog" aria-modal="true" onclick="if(event.target===this)closeModal('modal-omra-oct')">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3><span class="fr-text">Omra — Octobre 2026</span><span class="en-text">Umrah — October 2026</span></h3>
+        <small>17 – 27 octobre 2026 · 11 jours / 10 nuits · Départ Abidjan</small>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-omra-oct')" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-note"><span class="fr-text">🕌 Tous les tarifs incluent : visa Arabie Saoudite, vols aller-retour depuis Abidjan, hôtels 5★ à La Mecque &amp; Médine (petit-déjeuner inclus), transferts, 21 visites, encadrement 24h/24 &amp; pack cadeau pèlerin.</span><span class="en-text">🕌 All rates include: Saudi Arabia visa, return flights from Abidjan, 5★ hotels in Mecca &amp; Medina (breakfast), transfers, 21 visits, 24/7 guidance &amp; pilgrim gift pack.</span></p>
+      <table class="price-table">
+        <thead><tr><th><span class="fr-text">Type de chambre</span><span class="en-text">Room type</span></th><th><span class="fr-text">Prix / personne</span><span class="en-text">Price / person</span></th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="ptag"><span class="fr-text">Chambre Quadruple</span><span class="en-text">Quad Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">4 personnes</span><span class="en-text">4 people</span></small></td><td class="pprice">2 845 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Économique</span><span class="en-text">Economy</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Triple</span><span class="en-text">Triple Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">3 personnes</span><span class="en-text">3 people</span></small></td><td class="pprice">3 100 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Standard</span><span class="en-text">Standard</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Double</span><span class="en-text">Double Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">2 personnes</span><span class="en-text">2 people</span></small></td><td class="pprice">3 500 000 <small>FCFA</small></td><td><span class="pbadge pbest"><span class="fr-text">Populaire</span><span class="en-text">Popular</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Single</span><span class="en-text">Single Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">1 personne</span><span class="en-text">1 person</span></small></td><td class="pprice">4 350 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Premium</span><span class="en-text">Premium</span></span></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:11.5px;color:var(--ink-3);margin-bottom:16px;"><span class="fr-text">💳 Paiement en plusieurs fois disponible — contactez Mariam pour un plan personnalisé.</span><span class="en-text">💳 Instalment payments available — contact Mariam for a personalised plan.</span></p>
+      <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'Omra%20d'Octobre%202026%20et%20je%20voudrais%20des%20informations%20sur%20les%20tarifs%20%F0%9F%95%8C" target="_blank" rel="noopener" class="modal-wa"><span class="fr-text">📲 Contacter Mariam pour réserver</span><span class="en-text">📲 Contact Mariam to book</span></a>
+      <div class="modal-incl">
+        <h4><span class="fr-text">Ce qui est inclus</span><span class="en-text">What's included</span></h4>
+        <ul>
+          <li><span class="fr-text">Visa Arabie Saoudite</span><span class="en-text">Saudi Arabia visa</span></li>
+          <li><span class="fr-text">Vols A/R depuis Abidjan</span><span class="en-text">Return flights from Abidjan</span></li>
+          <li><span class="fr-text">Hôtels 5★ La Mecque</span><span class="en-text">5★ hotels Mecca</span></li>
+          <li><span class="fr-text">Hôtels 5★ Médine</span><span class="en-text">5★ hotels Medina</span></li>
+          <li><span class="fr-text">Petit-déjeuner tous les jours</span><span class="en-text">Breakfast daily</span></li>
+          <li><span class="fr-text">Transferts aéroport ↔ hôtel</span><span class="en-text">Airport ↔ hotel transfers</span></li>
+          <li><span class="fr-text">21 visites religieuses &amp; historiques</span><span class="en-text">21 religious &amp; historical visits</span></li>
+          <li><span class="fr-text">2 cours/jour avec chouyoukh</span><span class="en-text">2 daily lessons</span></li>
+          <li><span class="fr-text">Soirée feu de camp désert</span><span class="en-text">Desert bonfire evening</span></li>
+          <li><span class="fr-text">Montée du Mont Uhud</span><span class="en-text">Uhud Mountain ascent</span></li>
+          <li><span class="fr-text">Pack cadeau pèlerin</span><span class="en-text">Pilgrim gift pack</span></li>
+          <li><span class="fr-text">Encadrement 24h/24</span><span class="en-text">24/7 guidance</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL OMRA DÉCEMBRE 2026 / JANVIER 2027 -->
+<div class="modal-ov" id="modal-omra-dec" role="dialog" aria-modal="true" onclick="if(event.target===this)closeModal('modal-omra-dec')">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3><span class="fr-text">Omra — Décembre 2026 / Janvier 2027</span><span class="en-text">Umrah — December 2026 / January 2027</span></h3>
+        <small>24 déc. 2026 – 3 jan. 2027 · 11 jours / 10 nuits · Départ Abidjan</small>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-omra-dec')" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-note"><span class="fr-text">🕌 Tous les tarifs incluent : visa Arabie Saoudite, vols aller-retour depuis Abidjan, hôtels 5★ à La Mecque &amp; Médine (petit-déjeuner inclus), transferts, 21 visites, encadrement 24h/24 &amp; pack cadeau pèlerin.</span><span class="en-text">🕌 All rates include: Saudi Arabia visa, return flights from Abidjan, 5★ hotels in Mecca &amp; Medina (breakfast), transfers, 21 visits, 24/7 guidance &amp; pilgrim gift pack.</span></p>
+      <table class="price-table">
+        <thead><tr><th><span class="fr-text">Type de chambre</span><span class="en-text">Room type</span></th><th><span class="fr-text">Prix / personne</span><span class="en-text">Price / person</span></th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="ptag"><span class="fr-text">Chambre Quadruple</span><span class="en-text">Quad Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">4 personnes</span><span class="en-text">4 people</span></small></td><td class="pprice">2 915 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Économique</span><span class="en-text">Economy</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Triple</span><span class="en-text">Triple Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">3 personnes</span><span class="en-text">3 people</span></small></td><td class="pprice">3 185 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Standard</span><span class="en-text">Standard</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Double</span><span class="en-text">Double Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">2 personnes</span><span class="en-text">2 people</span></small></td><td class="pprice">3 600 000 <small>FCFA</small></td><td><span class="pbadge pbest"><span class="fr-text">Populaire</span><span class="en-text">Popular</span></span></td></tr>
+          <tr><td class="ptag"><span class="fr-text">Chambre Single</span><span class="en-text">Single Room</span><br><small style="font-weight:400;color:var(--ink-3);font-size:11.5px;"><span class="fr-text">1 personne</span><span class="en-text">1 person</span></small></td><td class="pprice">4 465 000 <small>FCFA</small></td><td><span class="pbadge"><span class="fr-text">Premium</span><span class="en-text">Premium</span></span></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:11.5px;color:var(--ink-3);margin-bottom:16px;"><span class="fr-text">💳 Paiement en plusieurs fois disponible — contactez Mariam pour un plan personnalisé.</span><span class="en-text">💳 Instalment payments available — contact Mariam for a personalised plan.</span></p>
+      <a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'Omra%20D%C3%A9cembre%202026%20%2F%20Janvier%202027%20et%20je%20voudrais%20des%20informations%20sur%20les%20tarifs%20%F0%9F%95%8C" target="_blank" rel="noopener" class="modal-wa"><span class="fr-text">📲 Contacter Mariam pour réserver</span><span class="en-text">📲 Contact Mariam to book</span></a>
+      <div class="modal-incl">
+        <h4><span class="fr-text">Ce qui est inclus</span><span class="en-text">What's included</span></h4>
+        <ul>
+          <li><span class="fr-text">Visa Arabie Saoudite</span><span class="en-text">Saudi Arabia visa</span></li>
+          <li><span class="fr-text">Vols A/R depuis Abidjan</span><span class="en-text">Return flights from Abidjan</span></li>
+          <li><span class="fr-text">Hôtels 5★ La Mecque</span><span class="en-text">5★ hotels Mecca</span></li>
+          <li><span class="fr-text">Hôtels 5★ Médine</span><span class="en-text">5★ hotels Medina</span></li>
+          <li><span class="fr-text">Petit-déjeuner tous les jours</span><span class="en-text">Breakfast daily</span></li>
+          <li><span class="fr-text">Transferts aéroport ↔ hôtel</span><span class="en-text">Airport ↔ hotel transfers</span></li>
+          <li><span class="fr-text">21 visites religieuses &amp; historiques</span><span class="en-text">21 religious &amp; historical visits</span></li>
+          <li><span class="fr-text">2 cours/jour avec chouyoukh</span><span class="en-text">2 daily lessons</span></li>
+          <li><span class="fr-text">Ambiance Nouvel An aux lieux saints</span><span class="en-text">New Year at the holy sites</span></li>
+          <li><span class="fr-text">Excursions Badr, Uhud, grottes</span><span class="en-text">Badr, Uhud, caves excursions</span></li>
+          <li><span class="fr-text">Pack cadeau pèlerin</span><span class="en-text">Pilgrim gift pack</span></li>
+          <li><span class="fr-text">Encadrement 24h/24</span><span class="en-text">24/7 guidance</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---- ONGLETS (tabs) ----
+document.querySelectorAll('.tab-bar').forEach(function(bar) {
+  bar.querySelectorAll('.tab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var section = bar.closest('section') || document;
+      var target = btn.getAttribute('data-tab');
+      bar.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      section.querySelectorAll('.tab-panel').forEach(function(p) {
+        p.classList.remove('active');
+      });
+      var panel = section.querySelector('#tab-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+});
+
+// ---- MODALES TARIFS ----
+function openModal(id) {
+  var m = document.getElementById(id);
+  if (m) { m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+  var m = document.getElementById(id);
+  if (m) { m.classList.remove('open'); document.body.style.overflow = ''; }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-ov.open').forEach(function(m) {
+      m.classList.remove('open');
+    });
+    document.body.style.overflow = '';
+  }
+});
+</script>
+
+<a href="https://wa.me/2250584230724?text=Bonjour%20Mariam%2C%20j%27ai%20vu%20votre%20portfolio%20et%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener" class="wa-fab" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="fr-text">Écrire sur WhatsApp</span><span class="en-text">Message on WhatsApp</span>
+</a>
+
 </body>
 </html>
